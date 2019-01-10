@@ -5,13 +5,15 @@ import footerStyles from './footer.module.css'
 
 const Footer = ({ ...props }) => (
   <footer className={footerStyles.footer} {...props}>
-    <p>
-      © {new Date().getFullYear()}, Built with
-      {` `}
-      <a className={footerStyles.footerLink} href="https://www.gatsbyjs.org">
-        Gatsby
-      </a>
-    </p>
+    <div className={footerStyles.footerInner}>
+      <p>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a className={footerStyles.footerLink} href="https://www.gatsbyjs.org">
+          Gatsby
+        </a>
+      </p>
+    </div>
   </footer>
 )
 

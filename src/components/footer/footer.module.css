@@ -4,6 +4,12 @@
   padding: 40px;
 }
 
+.footerInner {
+  margin: 0 auto;
+  max-width: 960px;
+  display: flex;
+}
+
 .footerLink {
   font-family: 'IBM Plex Mono', monospace;
 }

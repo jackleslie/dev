@@ -7,14 +7,29 @@
   margin: 0 auto;
   max-width: 960px;
   padding: 1.45rem 1.0875rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .headerTitle {
   margin: 0;
   font-size: 40px;
+  flex-grow: 2;
+}
+
+.headerTitleLink {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.headerNavigation {
+  flex-grow: 1;
+  padding-top: 16px;
 }
 
 .headerLink {
+  font-family: 'IBM Plex Mono', monospace;
   color: #ffffff;
   text-decoration: none;
+  margin-right: 20px;
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from '../components/link'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
@@ -25,7 +24,6 @@ const IndexPage = () => (
       virus. Hey, you know how I'm, like, always trying to save the planet?
       Here's my chance.
     </p>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

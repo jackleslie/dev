@@ -1,13 +1,12 @@
 import React from 'react'
 
-import Link from '../components/link'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Second Page</h1>
+    <SEO title="About" />
+    <h1>About</h1>
     <p>
       God help us, we're in the hands of engineers. What do they got in there?
       King Kong? I was part of something special. You really think you can fly
@@ -15,7 +14,6 @@ const SecondPage = () => (
       throw my cat out of the window? Do you have any idea how long it takes
       those cups to decompose.
     </p>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
