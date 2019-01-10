@@ -1,0 +1,9 @@
+.footer {
+  background-color: #50514f;
+  color: #ffffff;
+  padding: 40px;
+}
+
+.footerLink {
+  font-family: 'IBM Plex Mono', monospace;
+}
