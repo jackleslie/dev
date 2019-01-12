@@ -1,0 +1,105 @@
+.stripe {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  flex-grow: 1;
+  height: calc(100vh / 4);
+  position: sticky;
+}
+
+.stripe:hover {
+  cursor: pointer;
+}
+
+.stripeActive {
+  height: 100vh;
+}
+
+.stripeActive .stripeLink {
+  font-size: 45px;
+}
+
+.stripeActive0 {
+  margin-top: 0;
+}
+
+.stripeActive1 {
+  margin-top: calc(-100vh / 4);
+}
+
+.stripeActive2 {
+  margin-top: calc(-100vh / 2);
+}
+
+.stripeActive3 {
+  margin-top: calc(3 * (-100vh / 4));
+}
+
+.blue {
+  background-color: #247ba0;
+}
+
+.green {
+  background-color: #70c1b3;
+}
+
+.silver {
+  background-color: #bfc0c0;
+}
+
+.grey {
+  background-color: #50514f;
+}
+
+.divider {
+  width: 50px;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 15px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.dividerActive {
+  width: 100%;
+}
+
+.stripeInner {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stripeTitle {
+  margin: 0;
+  font-size: 40px;
+  flex-grow: 2;
+  padding-right: 20px;
+}
+
+.stripeTitleLink {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.stripeNavigation {
+  flex-grow: 1;
+  padding-top: 16px;
+}
+
+.stripeLink {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.stripeText {
+  color: #ffffff;
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
+}
