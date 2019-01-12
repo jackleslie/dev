@@ -14,7 +14,7 @@
   height: 100vh;
 }
 
-.stripeActive .stripeLink {
+.stripeActive .stripeTitle {
   font-size: 45px;
 }
 
@@ -54,7 +54,7 @@
   width: 50px;
   height: 1px;
   background-color: #ffffff;
-  margin-top: 15px;
+  margin-top: 12px;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
 }
@@ -71,28 +71,18 @@
   flex-wrap: wrap;
 }
 
-.stripeTitle {
-  margin: 0;
-  font-size: 40px;
-  flex-grow: 2;
-  padding-right: 20px;
-}
-
-.stripeTitleLink {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 .stripeNavigation {
   flex-grow: 1;
   padding-top: 16px;
 }
 
-.stripeLink {
+.stripeTitle {
+  margin: 0;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   font-family: 'Playfair Display', sans-serif;
-  font-size: 40px;
+  font-size: 36px;
+  font-weight: normal;
   color: #ffffff;
   text-decoration: none;
   margin-right: 20px;

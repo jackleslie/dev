@@ -2,8 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Footer from '../footer'
-import Header from '../header'
 import Stripe from '../stripe'
 
 import layoutStyles from './layout.module.css'

@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import Link from '../link'
-
 import stripeStyles from './stripe.module.css'
 
-const Stripe = ({ colour, to, position, title, children }) => {
+const Stripe = ({ colour, position, title, children }) => {
   const [active, setActive] = useState(null)
   const positionClass = `stripeActive${position}`
 
@@ -20,9 +18,7 @@ const Stripe = ({ colour, to, position, title, children }) => {
     >
       <div className={stripeStyles.stripeInner}>
         <div className={stripeStyles.stripeNavigation}>
-          <Link className={stripeStyles.stripeLink} to={to}>
-            {title}
-          </Link>
+          <h1 className={stripeStyles.stripeTitle}>{title}</h1>
           <div className={stripeStyles.stripeSubsection}>
             <div
               className={`${stripeStyles.divider} ${
@@ -39,7 +35,6 @@ const Stripe = ({ colour, to, position, title, children }) => {
 
 Stripe.propTypes = {
   colour: PropTypes.string,
-  to: PropTypes.string,
   position: PropTypes.number,
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
@@ -48,7 +43,6 @@ Stripe.propTypes = {
 Stripe.defaultProps = {
   colour: 'blue',
   position: 0,
-  to: '/',
 }
 
 export default Stripe
