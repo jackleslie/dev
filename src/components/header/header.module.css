@@ -28,18 +28,31 @@
   padding-top: 16px;
 }
 
+.headerSpacer {
+  font-family: system-ui;
+  font-size: 14px;
+  color: #ffffff;
+  margin-right: 20px;
+  line-height: 1px;
+  display: inline-block;
+}
+
 .headerLink {
   font-family: system-ui;
   font-size: 20px;
   color: #ffffff;
   text-decoration: none;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 600px) {
   .headerLink {
     font-size: 16px;
-    margin-right: 25px;
+    margin-right: 10px;
+  }
+
+  .headerSpacer {
+    margin-right: 10px;
   }
 }
 

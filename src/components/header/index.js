@@ -33,6 +33,7 @@ const Header = ({ siteTitle, colour, active }) => (
         >
           About
         </Link>
+        <div className={headerStyles.headerSpacer}>x</div>
         <Link
           id={
             active === 'photos'
@@ -44,6 +45,7 @@ const Header = ({ siteTitle, colour, active }) => (
         >
           Photos
         </Link>
+        <div className={headerStyles.headerSpacer}>x</div>
         <Link
           id={
             active === 'projects'
@@ -55,6 +57,7 @@ const Header = ({ siteTitle, colour, active }) => (
         >
           Projects
         </Link>
+        <div className={headerStyles.headerSpacer}>x</div>
         <Link
           id={
             active === 'contact'
