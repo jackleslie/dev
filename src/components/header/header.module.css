@@ -44,6 +44,14 @@
   text-shadow: -2px 2px #e17676;
 }
 
+.green {
+  text-shadow: -2px 2px #abe188;
+}
+
+.black {
+  text-shadow: -2px 2px #0b3c49;
+}
+
 #blueLink {
   transition: text-shadow 0.2s ease;
   -webkit-transition: text-shadow 0.2s ease;
@@ -75,4 +83,26 @@
 #yellowLink:hover,
 #yellowLinkActive {
   text-shadow: -1px 1px #f3c20d;
+}
+
+#greenLink {
+  transition: text-shadow 0.2s ease;
+  -webkit-transition: text-shadow 0.2s ease;
+  text-shadow: 0 0 #ffffff;
+}
+
+#greenLink:hover,
+#greenLinkActive {
+  text-shadow: -1px 1px #abe188;
+}
+
+#blackLink {
+  transition: text-shadow 0.2s ease;
+  -webkit-transition: text-shadow 0.2s ease;
+  text-shadow: 0 0 #ffffff;
+}
+
+#blackLink:hover,
+#blackLinkActive {
+  text-shadow: -1px 1px #0b3c49;
 }
