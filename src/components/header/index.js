@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Link from '../link'
+import { Link } from 'gatsby'
 
 import headerStyles from './header.module.css'
 
@@ -28,7 +28,7 @@ const Header = ({ siteTitle, colour, active }) => (
               ? headerStyles.pinkLinkActive
               : headerStyles.pinkLink
           }
-          className={headerStyles.headerLink}
+          className={headerStyles.headerNavigationLink}
           to="/about"
         >
           About
@@ -40,7 +40,7 @@ const Header = ({ siteTitle, colour, active }) => (
               ? headerStyles.yellowLinkActive
               : headerStyles.yellowLink
           }
-          className={headerStyles.headerLink}
+          className={headerStyles.headerNavigationLink}
           to="/photos"
         >
           Photos
@@ -52,7 +52,7 @@ const Header = ({ siteTitle, colour, active }) => (
               ? headerStyles.greenLinkActive
               : headerStyles.greenLink
           }
-          className={headerStyles.headerLink}
+          className={headerStyles.headerNavigationLink}
           to="/projects"
         >
           Projects
@@ -64,7 +64,7 @@ const Header = ({ siteTitle, colour, active }) => (
               ? headerStyles.blackLinkActive
               : headerStyles.blackLink
           }
-          className={headerStyles.headerLink}
+          className={headerStyles.headerNavigationLink}
           to="/contact"
         >
           Contact

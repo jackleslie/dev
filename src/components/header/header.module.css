@@ -1,5 +1,4 @@
 .header {
-  background-color: transparent;
   margin-bottom: 1.45rem;
 }
 
@@ -29,7 +28,6 @@
 }
 
 .headerSpacer {
-  font-family: system-ui;
   font-size: 14px;
   color: #ffffff;
   margin-right: 20px;
@@ -37,8 +35,7 @@
   display: inline-block;
 }
 
-.headerLink {
-  font-family: system-ui;
+.headerNavigationLink {
   font-size: 20px;
   color: #ffffff;
   text-decoration: none;
@@ -46,7 +43,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .headerLink {
+  .headerNavigationLink {
     font-size: 16px;
     margin-right: 10px;
   }
@@ -62,6 +59,10 @@
 
 .pink {
   text-shadow: -2px 2px #e17676;
+}
+
+.yellow {
+  text-shadow: -2px 2px #f3c20d;
 }
 
 .green {
