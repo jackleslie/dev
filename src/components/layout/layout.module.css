@@ -11,6 +11,10 @@
   padding-bottom: 5px;
 }
 
+.container p {
+  margin-top: 20px;
+}
+
 .blue {
   box-shadow: -20px 20px #2f87a8;
 }
@@ -57,10 +61,18 @@
   }
 
   .pink {
-    box-shadow: 0 -20px #e17676, 0 20px #e17676;
+    box-shadow: 0 20px #e17676;
   }
 
   .yellow {
-    box-shadow: 0 -20px #f3c20d, 0 20px #f3c20d;
+    box-shadow: 0 20px #f3c20d;
+  }
+
+  .green {
+    box-shadow: 0 20px #abe188;
+  }
+
+  .black {
+    box-shadow: 0 20px #0b3c49;
   }
 }
