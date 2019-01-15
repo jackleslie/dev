@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 600px) {
   .blue {
-    box-shadow: 0 -20px #2f87a8, 0 20px #2f87a8;
+    box-shadow: 0 20px #2f87a8;
   }
 
   .pink {
