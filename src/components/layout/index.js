@@ -7,7 +7,7 @@ import Header from '../header'
 
 import layoutStyles from './layout.module.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ colour, children, active }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -20,16 +20,28 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div className={layoutStyles.container}>{children}</div>
-        <Footer />
+        <Header
+          colour={colour}
+          siteTitle={data.site.siteMetadata.title}
+          active={active}
+        />
+        <div className={`${layoutStyles.container} ${layoutStyles[colour]}`}>
+          {children}
+        </div>
       </>
     )}
   />
 )
 
 Layout.propTypes = {
+  colour: PropTypes.string,
   children: PropTypes.node.isRequired,
+  active: PropTypes.string,
+}
+
+Layout.defaultProps = {
+  colour: 'blue',
+  active: 'index',
 }
 
 export default Layout
