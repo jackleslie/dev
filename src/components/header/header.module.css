@@ -1,5 +1,5 @@
 .header {
-  background-color: #247ba0;
+  background-color: transparent;
   margin-bottom: 1.45rem;
 }
 
@@ -29,8 +29,50 @@
 }
 
 .headerLink {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
   color: #ffffff;
   text-decoration: none;
   margin-right: 20px;
+}
+
+.blue {
+  text-shadow: -2px 2px #2f87a8;
+}
+
+.pink {
+  text-shadow: -2px 2px #e17676;
+}
+
+#blueLink {
+  transition: text-shadow 0.2s ease;
+  -webkit-transition: text-shadow 0.2s ease;
+  text-shadow: 0 0 #ffffff;
+}
+
+#blueLink:hover,
+#blueLinkActive {
+  text-shadow: -2px 2px #2f87a8;
+}
+
+#pinkLink {
+  transition: text-shadow 0.2s ease;
+  -webkit-transition: text-shadow 0.2s ease;
+  text-shadow: 0 0 #ffffff;
+}
+
+#pinkLink:hover,
+#pinkLinkActive {
+  text-shadow: -1px 1px #e17676;
+}
+
+#yellowLink {
+  transition: text-shadow 0.2s ease;
+  -webkit-transition: text-shadow 0.2s ease;
+  text-shadow: 0 0 #ffffff;
+}
+
+#yellowLink:hover,
+#yellowLinkActive {
+  text-shadow: -1px 1px #f3c20d;
 }
