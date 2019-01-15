@@ -44,10 +44,26 @@ const Header = ({ siteTitle, colour, active }) => (
         >
           Photos
         </Link>
-        <Link className={headerStyles.headerLink} to="/projects">
+        <Link
+          id={
+            active === 'projects'
+              ? headerStyles.greenLinkActive
+              : headerStyles.greenLink
+          }
+          className={headerStyles.headerLink}
+          to="/projects"
+        >
           Projects
         </Link>
-        <Link className={headerStyles.headerLink} to="/contact">
+        <Link
+          id={
+            active === 'contact'
+              ? headerStyles.blackLinkActive
+              : headerStyles.blackLink
+          }
+          className={headerStyles.headerLink}
+          to="/contact"
+        >
           Contact
         </Link>
       </div>
