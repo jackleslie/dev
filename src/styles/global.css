@@ -14,9 +14,10 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Roboto Slab', serif;
+  font-family: system-ui;
 }
 
 p {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
 }
