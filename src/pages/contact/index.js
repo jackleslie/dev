@@ -36,6 +36,7 @@ const ContactPage = () => (
     <form
       className={contactStyles.contactForm}
       name="contact"
+      method="POST"
       data-netlify="true"
     >
       <div className={contactStyles.contactElement}>
