@@ -33,7 +33,11 @@ const ContactPage = () => (
       </a>
       , or feel free to use the form below.
     </p>
-    <form className={contactStyles.contactForm} name="contact" netlify>
+    <form
+      className={contactStyles.contactForm}
+      name="contact"
+      data-netlify="true"
+    >
       <div className={contactStyles.contactElement}>
         <input
           className={contactStyles.contactInput}
