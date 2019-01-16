@@ -1,0 +1,69 @@
+.contactTwitter {
+  color: #38a1f3;
+}
+
+.contactLinkedIn {
+  color: #0077b5;
+}
+
+.contactKeybase {
+  color: #ff6f21;
+}
+
+.contactForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactElement {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.contactInput {
+  width: 100%;
+  height: 2em;
+  padding: 5px 0px 0px 1px;
+  outline: none;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: solid 4px #0b3c49;
+}
+
+.contactTextArea {
+  justify-content: center;
+  width: 100%;
+  padding: 15px 15px 0px 1px;
+  outline: none;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: solid 4px #0b3c49;
+}
+
+.contactButton {
+  margin: 20px 0 5px 0;
+  background: none;
+  background-color: #f4dacd;
+  color: inherit;
+  border: none;
+  padding: 15px;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: -5px 5px #0b3c49;
+  outline: none;
+}
+
+@media only screen and (max-width: 834px) {
+  .contactElement {
+    width: 100%;
+  }
+
+  .contactInput,
+  .contactTextArea {
+    font-size: 20px;
+  }
+}
