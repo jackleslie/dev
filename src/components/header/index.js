@@ -57,18 +57,6 @@ const Header = ({ siteTitle, colour, active }) => (
         >
           Projects
         </Link>
-        <div className={headerStyles.headerSpacer}>x</div>
-        <Link
-          id={
-            active === 'contact'
-              ? headerStyles.blackLinkActive
-              : headerStyles.blackLink
-          }
-          className={headerStyles.headerNavigationLink}
-          to="/contact"
-        >
-          Contact
-        </Link>
       </div>
     </div>
   </div>
