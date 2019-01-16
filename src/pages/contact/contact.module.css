@@ -57,6 +57,7 @@
   cursor: pointer;
   box-shadow: -5px 5px #0b3c49;
   outline: none;
+  -webkit-appearance: none;
   border-radius: 0;
 }
 
