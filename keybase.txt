@@ -1,0 +1,88 @@
+==================================================================
+https://keybase.io/jackleslie
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jackleslie.com
+  * I am jackleslie (https://keybase.io/jackleslie) on keybase.
+  * I have a public key with fingerprint 5A69 0F82 0D9D 9FA5 5BB4  706C B68C FAC0 45E0 4CB6
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01205ac0ef9eb58717fa6c7d515964c95f009867178378dbc7e8e973b292e57e71cd0a",
+      "fingerprint": "5a690f820d9d9fa55bb4706cb68cfac045e04cb6",
+      "host": "keybase.io",
+      "key_id": "b68cfac045e04cb6",
+      "kid": "01016daafcfb7408247e2dfce37820f5e253dac3889104bcb45b6c1832e1b1e7588c0a",
+      "uid": "b1f96ddd20addfd94db5d3c45c0e8819",
+      "username": "jackleslie"
+    },
+    "merkle_root": {
+      "ctime": 1547662059,
+      "hash_meta": "f0be9acac5aa09e83dea41a53974fdaf1e9196575a7188d90c0a75138d7865b3",
+      "seqno": 4433159
+    },
+    "revoke": {
+      "sig_ids": [
+        "e0652dd40831c4697afb35642c66f813415d589e7b2ba937aa7b1188463f76160f"
+      ]
+    },
+    "service": {
+      "hostname": "jackleslie.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1547662061,
+  "expire_in": 157680000,
+  "prev": "2e70322f1d2b5a8bbdb424719da824f2e4978578442da62afa0750e266acae15",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMP/AnicbZN/bBRFFMev/FQI4URRCBTNFgKRo8zs7uzMngYEpZCIQFFIhcNjdmeW
+27Z3297eHT9LwWqKQNqAYgWlQgwQqQhipYBYKZWmVH4UQS8YsBTLbzGoEaWx4FyV
+mKj7z+bNft973/28N1/06erplbZndfvBCecn70n78tCiuCcwNnpjsWQ4bKHkXyzl
+8c4Xz2fcjQXzbCb5JQBlgKgJuKVzAxEMsUU1EzMEka6ppo4sAHSiiXOiYMIME3PC
+dawYsi5zhDmGJgNU8kmWHZnHowVROxITZRHVdGARGTCd6RZFyDBUDDTT0IhpiXYq
+4kAVkUgMOW4qQ5gzqMszbUeciSDYae9/9Pd8A6gxSi3TMrAKiKxiLjPL5MKlDCzE
+ZaQwaiqE6BCohmmoyNBMSBSZQwNyjAgxO33H/+oDLV1jjMmAMmYxXWUGYoqpIkGG
+EKinhC6PRmiYC3UuNfPyuZtvc6nIJ4V5VETBqOPEUnjNmJ0SQaRiTRNwdfGL1A0F
+wzxGRa4FDK5Tk5qIUqBzojBOVUiRomPVYtSCXIe6hjCiGBLCdCBsYgQVwjDRkKEI
+Jy4vjDiSX1UVRUxJOIjyhJPHU81de54A50r+2RIHGpIZE2wUaKqajqllKEhTZVPT
+LAIVFSKGiM6xIRtUVzCl2ICipaopFtagBixpTlGqWTRhm53FU5P6D4FM0wkLTwVR
+J+aYTr74ForFClx/ikxsYUFKPJ8bwb/LBA07wsSmiIwEj7q2ExGkhPJf0DTok/iC
+AjvKg3ZKgbBGgHhSfXhClJQ5BoosW5DJBqLEMJihihWAOqNiFSyZqzomCBNVlRnV
+ZGpRgBHgsqYJ9ByifyhCInzSeaKmYBehsXhUDPVQXaCbJ62Xp0f3Lqkr5Ol1v/fe
+xSphXs/ryw/MH1ud7Da17zB/87dT7lR4G/21rW2lQ1riydabA4bGlfGtyTOBk480
+ezuONP76lb7UF6oD3uy9Vd9ljh22LW72uJSe3LxoUFcpnNWU8fbFrOatn3gnlfRZ
+U7Ux45RnaXD3j2vPpGUvm1ZRs7nZLfljfbm89GD1mkUX1o2+2tcM9Bwms8kZI1ZN
+2r+r0JzNYuN/a/p9G2ha8XJoxoift99pcLy1N337QgNHVsY37Mo5NuBu89m6Ls7J
+1RVO5n51WdvxwaN9TzS2niqfc5k0Ha0aPzSHFe5O//xg7u0OJXpgR/Lu1Zzle58B
+L11NvDOolgY9ZednVvmuPbVg1JLkmJ0luS+uKJ7+ag17cOYr6Y775KU14yaurSmf
+Mbloy761LQ3PZ71/cdOULnU9T0y4Vns7tPBEcc/DGwcWZmP/tO7+soxz7TP7DS6t
+Bzv7lYe29KvcPugXu3p97+15n41R555ueDhQULx895H2dcMf/+insspJK0fOvpVw
+2ZmPPxj1Q7fG6kCrvPkteihnapOvZdWt0WXp/rNH3+h/oePrm1pJ4kZr8awljbGs
+C0Xh5F7YUXOpZWvH5cHGo23PLuv9Qv1r37cdr2wrvpH76YkHhpws3RG+b/pjWbeL
+Dt9JNvi3VtfPkfKvt3OcueVcaPimiviK5ofevTLxSsl7m75ZF6j3ZG+4fuzDcf3X
+lz49683n5F1lp+eu/BPPXQ8p
+=q4Gl
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jackleslie
+
+==================================================================
