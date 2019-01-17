@@ -4,12 +4,17 @@ import PropTypes from 'prop-types'
 import projectStyles from './project.module.css'
 
 const Project = ({ project, colour }) => (
-  <div className={`${projectStyles.container} ${projectStyles[colour]}`}>
-    <a href={project.link}>
+  <a target="_blank" href={project.link}>
+    <div className={`${projectStyles.container} ${projectStyles[colour]}`}>
       <h3 className={projectStyles.projectTitle}>{project.title}</h3>
-    </a>
-    <h4 className={projectStyles.projectDescription}>{project.description}</h4>
-  </div>
+      <h4 className={projectStyles.projectDescription}>
+        {project.description}
+      </h4>
+      <h5 className={projectStyles.projectAward}>{`🏆${project.award} @ ${
+        project.event
+      } | ${project.issuer}`}</h5>
+    </div>
+  </a>
 )
 
 Project.propTypes = {

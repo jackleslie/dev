@@ -12,6 +12,7 @@ const ContactPage = () => (
     <p>
       You can find me on{' '}
       <a
+        target="_blank"
         className={contactStyles.contactTwitter}
         href="https://twitter.com/jackjdleslie"
       >
@@ -19,6 +20,7 @@ const ContactPage = () => (
       </a>{' '}
       and fire me a DM, or if you're feeling fancy you can connect with me on{' '}
       <a
+        target="_blank"
         className={contactStyles.contactLinkedIn}
         href="https://linkedin.com/in/jackjdleslie"
       >
@@ -26,6 +28,7 @@ const ContactPage = () => (
       </a>
       . If you're really cool you can get me on{' '}
       <a
+        target="_blank"
         className={contactStyles.contactKeybase}
         href="https://keybase.io/jackleslie"
       >

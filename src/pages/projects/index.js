@@ -29,6 +29,9 @@ export const pageQuery = graphql`
           title
           description
           link
+          event
+          award
+          issuer
         }
       }
     }
