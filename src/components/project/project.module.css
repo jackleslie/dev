@@ -21,8 +21,7 @@
   color: #555555;
   font-weight: 400;
   font-size: 12px;
-  width: 50%;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .projectAward {
@@ -30,10 +29,4 @@
   margin: 5px 0;
   padding-bottom: 5px;
   font-weight: 500;
-}
-
-@media only screen and (max-width: 600px) {
-  .projectDescription {
-    width: 100%;
-  }
 }
