@@ -25,8 +25,12 @@ const IndexPage = ({ data }) => (
     </div>
     <h2>Latest Photos</h2>
     <div className={indexStyles.container}>
-      {data.contentfulGallery.photos.map(photo => (
-        <Img className={indexStyles.photo} fluid={photo.fluid} />
+      {data.photos.edges.map(({ node }) => (
+        <Img
+          className={indexStyles.photo}
+          fluid={node.fluid}
+          alt={node.title}
+        />
       ))}
     </div>
   </Layout>
@@ -36,10 +40,13 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    contentfulGallery {
-      photos {
-        fluid(maxWidth: 600) {
-          ...GatsbyContentfulFluid
+    photos: allContentfulAsset(limit: 4) {
+      edges {
+        node {
+          fluid(maxWidth: 600) {
+            ...GatsbyContentfulFluid
+          }
+          title
         }
       }
     }

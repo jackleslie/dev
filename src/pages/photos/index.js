@@ -12,8 +12,12 @@ const PhotosPage = ({ data }) => (
     <SEO title="Photos" />
     <h1>Photos</h1>
     <div className={photoStyles.container}>
-      {data.contentfulGallery.photos.map(photo => (
-        <Img className={photoStyles.photo} fluid={photo.fluid} />
+      {data.photos.edges.map(({ node }) => (
+        <Img
+          className={photoStyles.photo}
+          fluid={node.fluid}
+          alt={node.title}
+        />
       ))}
     </div>
   </Layout>
@@ -23,10 +27,13 @@ export default PhotosPage
 
 export const pageQuery = graphql`
   query {
-    contentfulGallery {
-      photos {
-        fluid(maxWidth: 600) {
-          ...GatsbyContentfulFluid
+    photos: allContentfulAsset {
+      edges {
+        node {
+          fluid(maxWidth: 600) {
+            ...GatsbyContentfulFluid
+          }
+          title
         }
       }
     }
