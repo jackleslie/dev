@@ -22,7 +22,7 @@ const PhotosPage = ({ data }) => (
 export default PhotosPage
 
 export const pageQuery = graphql`
-  query TextQuery {
+  query {
     contentfulGallery {
       photos {
         fluid(maxWidth: 600) {

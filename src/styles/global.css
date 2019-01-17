@@ -13,7 +13,8 @@ body {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: system-ui;
+  line-height: 1.3;
   font-weight: 100;
   color: #555555;
 }
