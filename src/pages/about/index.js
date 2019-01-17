@@ -10,6 +10,15 @@ const AboutPage = () => (
     <SEO title="About" />
     <h1>About</h1>
     <p>
+      I'm a penultimate year CS student at the University of St Andrews in
+      Scotland, currently looking for experience in full-stack web development
+      with JavaScript. I have a background in front-end development with React
+      and dapp development on Ethereum.
+      <br /> <br />
+      I'm a keen hackathon-goer and photographer - feel free to browse my
+      projects and photos on this site. It was built with Gatsby and Contentful,
+      and is being hosted on Netlify.
+      <br /> <br />
       You can find me on{' '}
       <a
         className={aboutStyles.twitter}

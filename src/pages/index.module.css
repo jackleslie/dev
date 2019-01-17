@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin: 20px 0;
+  margin-left: -5px;
 }
 
 .photo {
