@@ -9,7 +9,7 @@ import layoutStyles from './layout.module.css'
 const Layout = ({ colour, children, active }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query {
         site {
           siteMetadata {
             title
