@@ -50,7 +50,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    projects: allContentfulProject {
+    projects: allContentfulProject(
+      limit: 2
+      sort: { fields: date, order: DESC }
+    ) {
       edges {
         node {
           title
