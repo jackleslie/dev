@@ -19,11 +19,7 @@ const Layout = ({ colour, children, active }) => (
     `}
     render={data => (
       <>
-        <Header
-          colour={colour}
-          siteTitle={data.site.siteMetadata.title}
-          active={active}
-        />
+        <Header siteTitle={data.site.siteMetadata.title} active={active} />
         <div className={`${layoutStyles.container} ${layoutStyles[colour]}`}>
           {children}
         </div>

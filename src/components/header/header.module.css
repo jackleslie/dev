@@ -19,7 +19,6 @@
 
 .headerTitleLink {
   color: #ffffff;
-  text-decoration: none;
 }
 
 .headerNavigation {
@@ -38,28 +37,7 @@
 .headerNavigationLink {
   font-size: 20px;
   color: #ffffff;
-  text-decoration: none;
   margin-right: 20px;
-}
-
-.blue {
-  text-shadow: -2px 2px #2f87a8;
-}
-
-.pink {
-  text-shadow: -2px 2px #e17676;
-}
-
-.yellow {
-  text-shadow: -2px 2px #f3c20d;
-}
-
-.green {
-  text-shadow: -2px 2px #abe188;
-}
-
-.black {
-  text-shadow: -2px 2px #0b3c49;
 }
 
 #blueLink {
@@ -104,15 +82,4 @@
 #greenLink:hover,
 #greenLinkActive {
   text-shadow: -1px 1px #abe188;
-}
-
-#blackLink {
-  transition: text-shadow 0.2s ease;
-  -webkit-transition: text-shadow 0.2s ease;
-  text-shadow: 0 0 #ffffff;
-}
-
-#blackLink:hover,
-#blackLinkActive {
-  text-shadow: -1px 1px #0b3c49;
 }

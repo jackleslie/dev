@@ -6,8 +6,13 @@ import SEO from '../components/seo'
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1>OOPSIE WOOPSIE!!</h1>
+    <a href="https://knowyourmeme.com/memes/oopsie-woopsie">
+      <p>
+        Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at
+        our headquarters are working VEWY HAWD to fix this!
+      </p>
+    </a>
   </Layout>
 )
 

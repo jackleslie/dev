@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 
 import headerStyles from './header.module.css'
 
-const Header = ({ siteTitle, colour, active }) => (
+const Header = ({ siteTitle, active }) => (
   <div className={headerStyles.header}>
     <div className={headerStyles.headerInner}>
       <h1 className={headerStyles.headerTitle}>
@@ -64,13 +64,11 @@ const Header = ({ siteTitle, colour, active }) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-  colour: PropTypes.string,
   active: PropTypes.string,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
-  colour: 'blue',
   active: 'index',
 }
 
