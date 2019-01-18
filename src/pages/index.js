@@ -62,6 +62,7 @@ export const pageQuery = graphql`
           event
           award
           issuer
+          competition
         }
       }
     }
