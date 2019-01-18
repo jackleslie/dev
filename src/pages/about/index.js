@@ -17,7 +17,16 @@ const AboutPage = () => (
       <br /> <br />
       I'm a keen hackathon-goer and photographer, feel free to browse my
       projects and photos on this site. It was built with Gatsby and Contentful,
-      and is being hosted on Netlify.
+      and is being hosted on Netlify. The code is open source and can be found
+      on{' '}
+      <a
+        target="_blank"
+        className={aboutStyles.github}
+        href="https://github.com/jackleslie"
+      >
+        github
+      </a>
+      .
       <br /> <br />
       You can find me on{' '}
       <a
@@ -27,13 +36,21 @@ const AboutPage = () => (
       >
         twitter
       </a>{' '}
-      and fire me a DM, or if you're feeling fancy you can connect with me on{' '}
+      and fire me a DM, but if you're feeling fancy you can connect with me on{' '}
       <a
         target="_blank"
         className={aboutStyles.linkedIn}
         href="https://linkedin.com/in/jackjdleslie"
       >
         linkedin
+      </a>{' '}
+      or{' '}
+      <a
+        target="_blank"
+        className={aboutStyles.angellist}
+        href="https://angel.co/jackleslie"
+      >
+        angellist
       </a>
       . If you're really cool you can get me on{' '}
       <a
