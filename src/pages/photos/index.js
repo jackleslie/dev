@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
+import Gallery from '../../components/gallery'
 
 import photoStyles from './photos.module.css'
 
@@ -11,15 +12,7 @@ const PhotosPage = ({ data }) => (
   <Layout colour="yellow" active="photos">
     <SEO title="Photos" />
     <h1>Photos</h1>
-    <div className={photoStyles.container}>
-      {data.photos.edges.map(({ node }) => (
-        <Img
-          className={photoStyles.photo}
-          fluid={node.fluid}
-          alt={node.title}
-        />
-      ))}
-    </div>
+    <Gallery photos={data.photos} />
   </Layout>
 )
 

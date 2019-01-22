@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Project from '../components/project'
+import Gallery from '../components/gallery'
 
 import indexStyles from './index.module.css'
 
@@ -24,15 +25,7 @@ const IndexPage = ({ data }) => (
       ))}
     </div>
     <h2>Latest Photos</h2>
-    <div className={indexStyles.container}>
-      {data.photos.edges.map(({ node }) => (
-        <Img
-          className={indexStyles.photo}
-          fluid={node.fluid}
-          alt={node.title}
-        />
-      ))}
-    </div>
+    <Gallery photos={data.photos} />
   </Layout>
 )
 
