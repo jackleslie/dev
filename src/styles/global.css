@@ -22,3 +22,33 @@ p {
 a {
   text-decoration: none;
 }
+
+.twitter {
+  color: #38a1f3;
+  box-shadow: inset 0px 0px 0 white, inset 0 -1px 0 #38a1f3;
+}
+
+.linkedIn {
+  color: #0077b5;
+  box-shadow: inset 0px 0px 0 white, inset 0 -1px 0 #0077b5;
+}
+
+.angellist {
+  color: #000000;
+  box-shadow: inset 0px 0px 0 white, inset 0 -1px 0 #000000;
+}
+
+.keybase {
+  color: #ff6f21;
+  box-shadow: inset 0px 0px 0 white, inset 0 -1px 0 #ff6f21;
+}
+
+.protonmail {
+  color: #8a90c7;
+  box-shadow: inset 0px 0px 0 white, inset 0 -1px 0 #8a90c7;
+}
+
+.github {
+  color: #24292e;
+  box-shadow: inset 0px 0px 0 white, inset 0 -1px 0 #24292e;
+}

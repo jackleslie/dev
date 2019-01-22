@@ -1,9 +1,7 @@
 import React from 'react'
 
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
-
-import aboutStyles from './about.module.css'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const AboutPage = () => (
   <Layout colour="pink" active="about">
@@ -21,7 +19,7 @@ const AboutPage = () => (
       on{' '}
       <a
         target="_blank"
-        className={aboutStyles.github}
+        className="github"
         href="https://github.com/jackleslie"
       >
         github
@@ -31,7 +29,7 @@ const AboutPage = () => (
       You can find me on{' '}
       <a
         target="_blank"
-        className={aboutStyles.twitter}
+        className="twitter"
         href="https://twitter.com/jackjdleslie"
       >
         twitter
@@ -39,7 +37,7 @@ const AboutPage = () => (
       and fire me a DM, but if you're feeling fancy you can connect with me on{' '}
       <a
         target="_blank"
-        className={aboutStyles.linkedIn}
+        className="linkedIn"
         href="https://linkedin.com/in/jackjdleslie"
       >
         linkedin
@@ -47,7 +45,7 @@ const AboutPage = () => (
       or{' '}
       <a
         target="_blank"
-        className={aboutStyles.angellist}
+        className="angellist"
         href="https://angel.co/jackleslie"
       >
         angellist
@@ -55,7 +53,7 @@ const AboutPage = () => (
       . If you're really cool you can get me on{' '}
       <a
         target="_blank"
-        className={aboutStyles.keybase}
+        className="keybase"
         href="https://keybase.io/jackleslie"
       >
         keybase
@@ -64,7 +62,7 @@ const AboutPage = () => (
       <a
         target="_blank"
         href="mailto:jackleslie@protonmail.com"
-        className={aboutStyles.protonmail}
+        className="protonmail"
       >
         email
       </a>
