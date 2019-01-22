@@ -6,8 +6,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Project from '../components/project'
 import Gallery from '../components/gallery'
-
-import indexStyles from './index.module.css'
+import Portfolio from '../components/portfolio'
 
 const IndexPage = ({ data }) => (
   <Layout colour="blue">
@@ -19,11 +18,7 @@ const IndexPage = ({ data }) => (
       with JavaScript.
     </p>
     <h2>Latest Projects</h2>
-    <div className={indexStyles.container}>
-      {data.projects.edges.map(({ node }) => (
-        <Project colour="blue" project={node} />
-      ))}
-    </div>
+    <Portfolio projects={data.projects} />
     <h2>Latest Photos</h2>
     <Gallery photos={data.photos} />
   </Layout>

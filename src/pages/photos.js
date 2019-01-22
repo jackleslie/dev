@@ -2,11 +2,9 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
-import Gallery from '../../components/gallery'
-
-import photoStyles from './photos.module.css'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Gallery from '../components/gallery'
 
 const PhotosPage = ({ data }) => (
   <Layout colour="yellow" active="photos">
