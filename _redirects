@@ -1,0 +1,6 @@
+# Redirect domain aliases to primary domain
+https://jackleslie.com/* https://jackleslie.dev/:splat 301!
+https://www.jackleslie.com/* https://jackleslie.dev/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://jackleslie.netlify.com/* https://jackleslie.dev/:splat 301!
