@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "https://jackleslie.com/*"
+  to = "https://jackleslie.dev/:splat"
+
+[[redirects]]
+  from = "https://www.jackleslie.com/*"
+  to = "https://jackleslie.dev/:splat"
+
+[[redirects]]
+  from = "https://jackleslie.netlify.com/*"
+  to = "https://jackleslie.dev/:splat"
