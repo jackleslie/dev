@@ -13,8 +13,8 @@ const Project = ({ project, colour }) => (
     <h4 className={projectStyles.projectDescription}>{project.description}</h4>
     <h5 className={projectStyles.projectAward}>
       {project.competition
-        ? `🏆${project.award} @ ${project.event} | ${project.issuer}`
-        : `🛠️${project.award} @ ${project.event} | ${project.issuer}`}
+        ? `🏆${project.award} @ ${project.event}`
+        : `🛠️${project.award} @ ${project.event}`}
     </h5>
   </a>
 )
