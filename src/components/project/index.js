@@ -7,6 +7,7 @@ const Project = ({ project, colour }) => (
   <a
     className={`${projectStyles.container} ${projectStyles[colour]}`}
     target="_blank"
+    rel="noopener"
     href={project.link}
   >
     <h3 className={projectStyles.projectTitle}>{project.title}</h3>

@@ -19,6 +19,7 @@ const AboutPage = () => (
       on{' '}
       <a
         target="_blank"
+        rel="noopener"
         className="github"
         href="https://github.com/jackleslie"
       >
@@ -29,6 +30,7 @@ const AboutPage = () => (
       You can find me on{' '}
       <a
         target="_blank"
+        rel="noopener"
         className="twitter"
         href="https://twitter.com/jackjdleslie"
       >
@@ -37,6 +39,7 @@ const AboutPage = () => (
       and fire me a DM, but if you're feeling fancy you can connect with me on{' '}
       <a
         target="_blank"
+        rel="noopener"
         className="linkedIn"
         href="https://linkedin.com/in/jackjdleslie"
       >
@@ -45,6 +48,7 @@ const AboutPage = () => (
       or{' '}
       <a
         target="_blank"
+        rel="noopener"
         className="angellist"
         href="https://angel.co/jackleslie"
       >
@@ -53,6 +57,7 @@ const AboutPage = () => (
       . If you're really cool you can get me on{' '}
       <a
         target="_blank"
+        rel="noopener"
         className="keybase"
         href="https://keybase.io/jackleslie"
       >
@@ -61,6 +66,7 @@ const AboutPage = () => (
       , or feel free to send me an{' '}
       <a
         target="_blank"
+        rel="noopener"
         href="mailto:jackleslie@protonmail.com"
         className="protonmail"
       >
