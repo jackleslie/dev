@@ -9,3 +9,7 @@
 [[redirects]]
   from = "https://jackleslie.netlify.com/*"
   to = "https://jackleslie.dev/:splat"
+
+[[redirects]]
+  from = "https://jackleslie.dev/open-finance"
+  to = "https://www.notion.so/jackleslie/Open-Finance-156faf26fd774636ba5347549a713339"
