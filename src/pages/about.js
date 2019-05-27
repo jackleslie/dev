@@ -9,7 +9,7 @@ const AboutPage = () => (
     <h1>About</h1>
     <p>
       I'm a penultimate year CS student at the University of St Andrews in
-      Scotland, currently interning as a Full Stack developer at{' '}
+      Scotland, interning as a Full Stack developer at{' '}
       <a
         target="_blank"
         rel="noopener"
@@ -17,9 +17,9 @@ const AboutPage = () => (
         className="transferwise"
       >
         TransferWise
-      </a>
-      . I have a background in front-end development with React and dapp
-      development on Ethereum.
+      </a>{' '}
+      this summer. I have a background in front-end development with React and
+      dapp development on Ethereum.
       <br /> <br />
       I'm a keen hackathon-goer and photographer, feel free to browse my
       projects and photos on this site. It was built with Gatsby and Contentful,

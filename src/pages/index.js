@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <h1>Welcome</h1>
     <p>
       I'm a penultimate year CS student at the University of St Andrews in
-      Scotland, currently interning as a Full Stack developer at{' '}
+      Scotland, interning as a Full Stack developer at{' '}
       <a
         target="_blank"
         rel="noopener"
@@ -22,8 +22,8 @@ const IndexPage = ({ data }) => (
         className="transferwise"
       >
         TransferWise
-      </a>
-      .
+      </a>{' '}
+      this summer.
     </p>
     <h2>Latest Projects</h2>
     <Portfolio projects={data.projects} />
