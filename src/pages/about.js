@@ -31,7 +31,7 @@ const AboutPage = () => (
         className="github"
         href="https://github.com/jackleslie"
       >
-        github
+        GitHub
       </a>
       .
       <br /> <br />
@@ -42,7 +42,7 @@ const AboutPage = () => (
         className="twitter"
         href="https://twitter.com/jackjdleslie"
       >
-        twitter
+        Twitter
       </a>{' '}
       and fire me a DM, but if you're feeling fancy you can connect with me on{' '}
       <a
@@ -51,17 +51,8 @@ const AboutPage = () => (
         className="linkedIn"
         href="https://linkedin.com/in/jackjdleslie"
       >
-        linkedin
+        LinkedIn
       </a>{' '}
-      or{' '}
-      <a
-        target="_blank"
-        rel="noopener"
-        className="angellist"
-        href="https://angel.co/jackleslie"
-      >
-        angellist
-      </a>
       . If you're really cool you can get me on{' '}
       <a
         target="_blank"
@@ -69,7 +60,7 @@ const AboutPage = () => (
         className="keybase"
         href="https://keybase.io/jackleslie"
       >
-        keybase
+        Keybase
       </a>
       , or feel free to send me an{' '}
       <a
