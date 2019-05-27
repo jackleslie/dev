@@ -14,8 +14,16 @@ const IndexPage = ({ data }) => (
     <h1>Welcome</h1>
     <p>
       I'm a penultimate year CS student at the University of St Andrews in
-      Scotland, currently looking for experience in full-stack web development
-      with JavaScript.
+      Scotland, currently interning as a Full Stack developer at{' '}
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://transferwise.com"
+        className="transferwise"
+      >
+        TransferWise
+      </a>
+      .
     </p>
     <h2>Latest Projects</h2>
     <Portfolio projects={data.projects} />
