@@ -1,0 +1,23 @@
+name: CI
+
+on: [push]
+
+jobs:
+  test:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Test
+      run: yarn test
+    
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Build
+      run: yarn build
+      
+    needs: test
+    
