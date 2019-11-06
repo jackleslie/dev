@@ -54,7 +54,7 @@ h1 {
 p {
   font-family: var(--font);
   color: var(--grey);
-  letter-spacing: 0.068px;
+  letter-spacing: 0.1px;
   font-size: 1.25rem;
   transition: var(--transition);
 }
@@ -132,7 +132,7 @@ a:visited {
   }
 
   p {
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-size: 1rem;
   }
 }
