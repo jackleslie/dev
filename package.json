@@ -12,8 +12,5 @@
     "next": "9.1.2",
     "react": "16.11.0",
     "react-dom": "16.11.0"
-  },
-  "devDependencies": {
-    "postcss-css-variables": "^0.13.0"
   }
 }
