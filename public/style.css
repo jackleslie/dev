@@ -3,8 +3,8 @@
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --main-content: 45rem;
   --dark: #222222;
-  --grey: #555555;
-  --light: #ffffff;
+  --grey: #444444;
+  --light: rgba(255, 255, 255, 0.99);
   --transferwise: #00b9ff;
   --protonmail: #8a90c7;
   --keybase: #ff6f21;
@@ -13,7 +13,7 @@
 }
 
 :root.dark {
-  --dark: #ffffff;
+  --dark: rgba(255, 255, 255, 0.99);
   --grey: #cccccc;
   --light: #222222;
 }
