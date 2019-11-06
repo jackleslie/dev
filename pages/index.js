@@ -1,16 +1,21 @@
 import React from "react";
 import Head from "next/head";
+import classnames from "classnames";
 
 import { useDarkMode } from "../hooks";
 
-const Home = () => {
+export default () => {
   const [dark, toggleDark] = useDarkMode();
   return (
     <main>
       <Head>
-        <title>Home</title>
-        <link rel="icon" href={dark ? "dark.ico" : "/light.ico"} />
+        <title>Jack Leslie</title>
+        <link rel="icon" href={dark ? "dark.ico" : "light.ico"} />
         <link rel="stylesheet" href="./style.css"></link>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-133938630-1"
+        ></script>
       </Head>
 
       <article>
@@ -19,10 +24,10 @@ const Home = () => {
           aria-label="Toggle Theme"
           title="Toggle Theme"
           type="button"
-          onClick={() => toggleDark(!dark)}
+          onClick={toggleDark}
         >
           <div className="sun" />
-          <div className={`moon ${dark ? "moonMoved" : ""}`} />
+          <div className={classnames("moon", { moonMoved: dark })} />
         </button>
       </article>
 
@@ -51,5 +56,3 @@ const Home = () => {
     </main>
   );
 };
-
-export default Home;
