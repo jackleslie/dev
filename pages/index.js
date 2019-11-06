@@ -17,12 +17,11 @@ const Home = () => (
           Frontend developer and JavaScript enthusiast.
         </p>
         <p>
-          Incoming graduate Fullstack developer at{" "}
+          I was an intern at{" "}
           <a href="https://transferwise.com" target="_blank">
             TransferWise
-          </a>
-          . You can find me on GitHub, Twitter, Keybase and you can reach out by
-          email.
+          </a>{" "}
+          and will be returning as a graduate Fullstack developer.
         </p>
       </article>
     </main>
