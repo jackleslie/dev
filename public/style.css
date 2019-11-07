@@ -10,12 +10,16 @@
   --keybase: #ff6f21;
   --transition: color 0.2s ease, background-color 0.2s ease, top 0.2s ease,
     left 0.2s ease;
+  --moon-top: 0px;
+  --moon-left: 0px;
 }
 
 :root.dark {
   --dark: rgba(255, 255, 255, 0.99);
   --grey: #dddddd;
   --light: #222222;
+  --moon-top: -4px;
+  --moon-left: 6px;
 }
 
 ::selection {
@@ -92,14 +96,9 @@ button {
   width: 30px;
   background-color: #222222;
   border-radius: 50%;
-  left: 0px;
-  top: 0px;
+  left: var(--moon-left);
+  top: var(--moon-top);
   transition: var(--transition);
-}
-
-.crescent {
-  left: 6px;
-  top: -4px;
 }
 
 a,

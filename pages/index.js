@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import classnames from "classnames";
 
 import { useDarkMode } from "../hooks";
 
@@ -27,7 +26,7 @@ export default () => {
           onClick={toggleDark}
         >
           <div className="sun" />
-          <div className={classnames("moon", { crescent: dark })} />
+          <div className="moon" />
         </button>
       </article>
 
