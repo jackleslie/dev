@@ -97,7 +97,7 @@ button {
   transition: var(--transition);
 }
 
-.moonMoved {
+.crescent {
   left: 6px;
   top: -4px;
 }
@@ -122,7 +122,7 @@ a:visited {
   color: var(--keybase);
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 400px) {
   main {
     padding: 1em 1.5em 0 1.5em;
   }

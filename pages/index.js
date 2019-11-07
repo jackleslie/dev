@@ -6,16 +6,15 @@ import { useDarkMode } from "../hooks";
 
 export default () => {
   const [dark, toggleDark] = useDarkMode();
+
+  const themeColor = dark ? "#222222" : "#ffffff";
+  const icon = dark ? "dark.ico" : "light.ico";
+
   return (
     <main>
       <Head>
-        <title>Jack Leslie</title>
-        <link rel="icon" href={dark ? "dark.ico" : "light.ico"} />
-        <link rel="stylesheet" href="./style.css"></link>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-133938630-1"
-        ></script>
+        <meta name="theme-color" content={themeColor} />
+        <link rel="icon" href={icon} />
       </Head>
 
       <article>
@@ -27,7 +26,7 @@ export default () => {
           onClick={toggleDark}
         >
           <div className="sun" />
-          <div className={classnames("moon", { moonMoved: dark })} />
+          <div className={classnames("moon", { crescent: dark })} />
         </button>
       </article>
 
