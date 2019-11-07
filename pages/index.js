@@ -1,20 +1,22 @@
+/* global document window */
 import React from "react";
 import Head from "next/head";
 
-import { useDarkMode } from "../hooks";
-
 export default () => {
-  const [dark, toggleDark] = useDarkMode();
-
-  const themeColor = dark ? "#222222" : "#ffffff";
-  const icon = dark ? "dark.ico" : "light.ico";
+  const toggle = () => {
+    const isDark = window.localStorage.getItem("jackleslie-dark-mode");
+    if (isDark) {
+      window.localStorage.removeItem("jackleslie-dark-mode");
+    } else {
+      window.localStorage.setItem("jackleslie-dark-mode", 1);
+    }
+    document.documentElement.classList.toggle("dark");
+  };
 
   return (
     <main>
       <Head>
         <title>Jack Leslie</title>
-        <meta name="theme-color" content={themeColor} />
-        <link rel="icon" href={icon} />
       </Head>
 
       <article>
@@ -23,7 +25,7 @@ export default () => {
           aria-label="Toggle Theme"
           title="Toggle Theme"
           type="button"
-          onClick={toggleDark}
+          onClick={toggle}
         >
           <div className="sun" />
           <div className="moon" />
