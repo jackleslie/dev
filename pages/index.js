@@ -13,6 +13,7 @@ export default () => {
   return (
     <main>
       <Head>
+        <title>Jack Leslie</title>
         <meta name="theme-color" content={themeColor} />
         <link rel="icon" href={icon} />
       </Head>
