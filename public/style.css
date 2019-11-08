@@ -2,9 +2,11 @@
   --font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --main-content: 45rem;
-  --dark: #222222;
-  --grey: #444444;
-  --light: rgba(255, 255, 255, 0.99);
+  --white: rgba(243, 241, 240, 0.99);
+  --black: #222222;
+  --dark: var(--black);
+  --grey: #333333;
+  --light: var(--white);
   --transferwise: #00b9ff;
   --protonmail: #8a90c7;
   --keybase: #ff6f21;
@@ -15,9 +17,9 @@
 }
 
 :root.dark {
-  --dark: rgba(255, 255, 255, 0.99);
+  --dark: var(--white);
   --grey: #dddddd;
-  --light: #222222;
+  --light: var(--black);
   --moon-top: -4px;
   --moon-left: 6px;
 }
@@ -30,6 +32,9 @@
 body {
   background-color: var(--light);
   transition: var(--transition);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main {
@@ -58,7 +63,6 @@ h1 {
 p {
   font-family: var(--font);
   color: var(--grey);
-  letter-spacing: 0.1px;
   font-size: 1.25rem;
   transition: var(--transition);
 }
@@ -85,7 +89,7 @@ button {
   position: absolute;
   height: 30px;
   width: 30px;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 50%;
   transition: var(--transition);
 }
@@ -94,7 +98,7 @@ button {
   position: absolute;
   height: 30px;
   width: 30px;
-  background-color: #222222;
+  background-color: var(--black);
   border-radius: 50%;
   left: var(--moon-left);
   top: var(--moon-top);
@@ -104,6 +108,7 @@ button {
 a,
 a:visited {
   text-decoration: none;
+  font-weight: 500;
 }
 
 .transferwise,
