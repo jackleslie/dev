@@ -25,8 +25,10 @@ export default class MyDocument extends Document {
               __html: `
               ;(function () {
                 try {
-                  var isDark = window.localStorage.getItem('jackleslie-dark-mode')
-                  if (isDark == 1) {
+                  var storedDarkMode = window.localStorage.getItem('jackleslie-dark-mode') == 1
+                  var systemDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+                  var emptyStorage = window.localStorage.length === 0
+                  if (storedDarkMode || (emptyStorage && systemDarkMode)) {
                     document.documentElement.classList.add('dark')
                   }
                 } catch (err) {}

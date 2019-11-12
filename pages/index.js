@@ -4,9 +4,9 @@ import Head from "next/head";
 
 export default () => {
   const toggle = () => {
-    const isDark = window.localStorage.getItem("jackleslie-dark-mode");
+    const isDark = window.localStorage.getItem("jackleslie-dark-mode") != 0;
     if (isDark) {
-      window.localStorage.removeItem("jackleslie-dark-mode");
+      window.localStorage.setItem("jackleslie-dark-mode", 0);
     } else {
       window.localStorage.setItem("jackleslie-dark-mode", 1);
     }
