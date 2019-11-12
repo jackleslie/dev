@@ -5,11 +5,7 @@ import Head from "next/head";
 export default () => {
   const toggle = () => {
     const isDark = window.localStorage.getItem("jackleslie-dark-mode") != 0;
-    if (isDark) {
-      window.localStorage.setItem("jackleslie-dark-mode", 0);
-    } else {
-      window.localStorage.setItem("jackleslie-dark-mode", 1);
-    }
+    window.localStorage.setItem("jackleslie-dark-mode", isDark ? 0 : 1);
     document.documentElement.classList.toggle("dark");
   };
 
@@ -27,8 +23,8 @@ export default () => {
           type="button"
           onClick={toggle}
         >
-          <div className="sun" />
-          <div className="moon" />
+          <div aria-label="Sun" className="sun" />
+          <div aria-label="Moon" className="moon" />
         </button>
       </article>
 
