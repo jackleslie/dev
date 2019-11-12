@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jack Leslie</title>
+    <meta name="description" content="Jack Leslie personal website" />
+    <meta
+      name="keywords"
+      content="Frontend,Student,Graduate,JavaScript"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jack Leslie" />
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="icon" href="favicon.ico" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-133938630-1"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>Jack Leslie</h1>
+        <button
+          aria-label="Toggle Theme"
+          title="Toggle Theme"
+          type="button"
+          onClick="toggle()"
+        >
+          <div class="sun" />
+          <div class="moon" />
+        </button>
+      </article>
+
+      <p>
+        Final year Computer Science student at the University of St Andrews,
+        Frontend developer and JavaScript enthusiast.
+      </p>
+      <p>
+        I was an intern at
+        <a href="https://transferwise.com" class="transferwise">
+          TransferWise
+        </a>
+        and will be returning as a graduate Fullstack developer.
+      </p>
+      <p>
+        If you want to get in touch you can
+        <a href="mailto:jackleslie@protonmail.com" class="protonmail">
+          email
+        </a>
+        me, and you can find me online through my
+        <a href="https://keybase.io/jackleslie" class="keybase">
+          Keybase
+        </a>
+        profile.
+      </p>
+    </main>
+    <script>
+      var storedDarkMode = window.localStorage.getItem('jackleslie-dark-mode') == 1
+      var systemDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+      var emptyStorage = window.localStorage.length === 0
+      if (storedDarkMode || (emptyStorage && systemDarkMode)) {
+        document.documentElement.classList.add('dark')
+      }
+
+      function toggle() {
+        var isDark = window.localStorage.getItem("jackleslie-dark-mode") != 0;
+        window.localStorage.setItem("jackleslie-dark-mode", isDark ? 0 : 1);
+        document.documentElement.classList.toggle("dark");
+      }
+    </script>
+  </body>
+</html>
