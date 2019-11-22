@@ -28,9 +28,11 @@ export default class MyDocument extends Document {
                   var storedDarkMode = window.localStorage.getItem('jackleslie-dark-mode') == 1
                   var systemDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
                   var emptyStorage = window.localStorage.length === 0
-                  if (storedDarkMode || (emptyStorage && systemDarkMode)) {
+                  var isDark = storedDarkMode || (emptyStorage && systemDarkMode)
+                  if (isDark) {
                     document.documentElement.classList.add('dark')
                   }
+                  window.localStorage.setItem('jackleslie-dark-mode', Number(isDark));
                 } catch (err) {}
               })()
             `
