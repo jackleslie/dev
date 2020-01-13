@@ -6,11 +6,13 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta name="description" content="Jack Leslie personal website" />
-          <meta
-            name="keywords"
-            content="Frontend,Student,Graduate,JavaScript"
-          />
           <meta name="author" content="Jack Leslie" />
+          <meta property="og:image" content="./favicon.ico" />
+          <meta
+            property="og:description"
+            content="Final year Computer Science student at the University of St Andrews, frontend developer and JavaScript enthusiast."
+          />
+          <meta property="og:title" content="Jack Leslie" />
           <link rel="stylesheet" href="./style.css"></link>
           <link rel="icon" href="./favicon.ico" />
           <script
