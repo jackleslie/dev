@@ -30,14 +30,14 @@ export default () => {
 
       <p>
         Final year Computer Science student at the University of St Andrews,
-        Frontend developer and JavaScript enthusiast.
+        frontend developer and JavaScript enthusiast.
       </p>
       <p>
         I was an intern at{" "}
         <a href="https://transferwise.com" className="transferwise">
           TransferWise
         </a>{" "}
-        and will be returning as a graduate Fullstack developer.
+        and will be returning as a graduate software engineer.
       </p>
       <p>
         If you want to get in touch you can{" "}
