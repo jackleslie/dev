@@ -5,6 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta charset="utf-8" />
           <meta name="description" content="Jack Leslie personal website" />
           <meta name="author" content="Jack Leslie" />
           <meta property="og:image" content="./favicon.ico" />
