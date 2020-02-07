@@ -14,7 +14,6 @@ export default class MyDocument extends Document {
             content="Final year Computer Science student at the University of St Andrews, frontend developer and JavaScript enthusiast."
           />
           <meta property="og:title" content="Jack Leslie" />
-          <link rel="stylesheet" href="./style.css"></link>
           <link rel="icon" href="./favicon.ico" />
           <script
             async
