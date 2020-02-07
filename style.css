@@ -136,3 +136,9 @@ a:visited {
     font-size: 1rem;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition: none;
+  }
+}
