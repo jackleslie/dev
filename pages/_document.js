@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <meta name="description" content="Jack Leslie personal website" />
           <meta name="author" content="Jack Leslie" />
           <meta property="og:image" content="./favicon.ico" />
@@ -15,10 +15,6 @@ export default class MyDocument extends Document {
           />
           <meta property="og:title" content="Jack Leslie" />
           <link rel="icon" href="./favicon.ico" />
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-133938630-1"
-          ></script>
         </Head>
         <body>
           <script
@@ -37,7 +33,7 @@ export default class MyDocument extends Document {
                   window.localStorage.setItem('jackleslie-dark-mode', Number(isDark));
                 } catch (err) {}
               })()
-            `
+            `,
             }}
           />
           <Main />
