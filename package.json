@@ -2,11 +2,30 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint pages/**/*.js",
+    "format": "eslint pages/**/*.js --fix --quiet"
   },
   "dependencies": {
     "next": "^9.3.2",
     "react": "16.11.0",
     "react-dom": "16.11.0"
+  },
+  "devDependencies": {
+    "@transferwise/eslint-config": "^5.0.3",
+    "eslint": "^7.0.0",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
   }
 }
