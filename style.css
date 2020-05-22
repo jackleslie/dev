@@ -65,7 +65,7 @@ p {
 
 button {
   position: relative;
-  -webkit-appearance: none;
+  appearance: none;
   border: none;
   cursor: pointer;
   outline: none;
