@@ -2,9 +2,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint pages/**/*.js",
-    "format": "eslint pages/**/*.js --fix --quiet"
+    "start": "next start"
   },
   "dependencies": {
     "next": "^9.4.0",
@@ -21,11 +19,18 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.0.0",
     "husky": "^4.2.5",
-    "prettier": "^2.0.5"
+    "lint-staged": "^10.2.10",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.0",
+    "stylelint-config-standard": "^20.0.0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "style.css": "stylelint --fix",
+    "pages/**/*.js": "eslint --fix --quiet"
   }
 }

@@ -1,17 +1,20 @@
 :root {
-  --font: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font: -apple-system, blinkmacsystemfont, system-ui, sans-serif;
   --main-content: 45rem;
   --white: rgba(243, 241, 240, 0.99);
-  --black: #222222;
+  --black: #222;
   --dark: var(--black);
   --light: var(--white);
   --transferwise: #00b9ff;
   --protonmail: #8a90c7;
   --keybase: #ff6f21;
-  --transition: color 0.2s ease, background-color 0.2s ease, top 0.2s ease,
+  --transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    top 0.2s ease,
     left 0.2s ease;
-  --moon-top: 0px;
-  --moon-left: 0px;
+  --moon-top: 0;
+  --moon-left: 0;
 }
 
 :root.dark {
