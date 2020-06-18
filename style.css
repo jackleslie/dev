@@ -119,9 +119,17 @@ a:visited {
   text-underline-position: under;
 }
 
+a:focus {
+  outline: none;
+}
+
 .transferwise,
 .transferwise::selection {
   text-decoration-color: var(--transferwise);
+}
+
+.transferwise:focus {
+  background-color: var(--transferwise);
 }
 
 .blog,
@@ -129,14 +137,26 @@ a:visited {
   text-decoration-color: var(--blog);
 }
 
+.blog:focus {
+  background-color: var(--blog);
+}
+
 .protonmail,
 .protonmail::selection {
   text-decoration-color: var(--protonmail);
 }
 
+.protonmail:focus {
+  background-color: var(--protonmail);
+}
+
 .keybase,
 .keybase::selection {
   text-decoration-color: var(--keybase);
+}
+
+.keybase:focus {
+  background-color: var(--keybase);
 }
 
 @media only screen and (max-width: 400px) {
