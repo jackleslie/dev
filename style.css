@@ -2,8 +2,11 @@
   --font: -apple-system, blinkmacsystemfont, system-ui, sans-serif;
   --main-content: 45rem;
   --white: rgba(243, 241, 240, 0.99);
+  --white-grey: rgba(243, 241, 240, 0.91);
   --black: #111;
+  --black-grey: #222;
   --foreground: var(--black);
+  --midground: var(--black-grey);
   --background: var(--white);
   --transferwise: #00b9ff;
   --protonmail: #8a90c7;
@@ -19,6 +22,7 @@
 
 :root.dark {
   --foreground: var(--white);
+  --midground: var(--white-grey);
   --background: var(--black);
   --moon-top: -4px;
   --moon-left: 6px;
@@ -57,11 +61,12 @@ h1 {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   transition: var(--transition);
+  letter-spacing: -0.04em;
 }
 
 p {
   font-family: var(--font);
-  color: var(--foreground);
+  color: var(--midground);
   font-size: 1.25rem;
   transition: var(--transition);
 }
