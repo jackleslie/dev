@@ -30,7 +30,7 @@
     }
   },
   "lint-staged": {
-    "style.css": "stylelint --fix",
+    "styles/*.css": "stylelint --fix",
     "pages/**/*.js": "eslint --fix --quiet"
   }
 }

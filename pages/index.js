@@ -1,26 +1,16 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
+import { Header } from '../components';
 
-export default () => {
-  const toggle = () => {
-    const isDark = window.localStorage.getItem('jackleslie-dark-mode') != 0;
-    window.localStorage.setItem('jackleslie-dark-mode', isDark ? 0 : 1);
-    document.documentElement.classList.toggle('dark');
-  };
-
+export default function Index() {
   return (
     <main>
       <Head>
         <title>Jack Leslie</title>
       </Head>
 
-      <article>
-        <h1>Jack Leslie</h1>
-        <button aria-label="Toggle Theme" title="Toggle Theme" type="button" onClick={toggle}>
-          <div aria-label="Sun" className="sun" />
-          <div aria-label="Moon" className="moon" />
-        </button>
-      </article>
+      <Header />
 
       <p>
         Final year Computer Science student at the University of St Andrews, frontend developer and
@@ -32,6 +22,13 @@ export default () => {
           TransferWise
         </a>{' '}
         and will be returning as a graduate software engineer.
+      </p>
+      <p>
+        Sometimes I write about JavaScript and frontend development, you can read my posts on my{' '}
+        <Link href="/blog">
+          <a className="blog">blog</a>
+        </Link>
+        .
       </p>
       <p>
         If you want to get in touch you can{' '}
@@ -46,4 +43,4 @@ export default () => {
       </p>
     </main>
   );
-};
+}
