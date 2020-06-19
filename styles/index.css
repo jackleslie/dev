@@ -14,6 +14,7 @@
   --keybase: #ff6f21;
   --transition:
     color 0.2s ease,
+    border-left 0.2s ease,
     background-color 0.2s ease,
     text-decoration-color 0.2s ease,
     top 0.2s ease,
@@ -57,6 +58,10 @@ article {
   margin: 2em 0;
 }
 
+section {
+  transition: var(--transition);
+}
+
 h1 {
   font-family: var(--font);
   color: var(--foreground);
@@ -65,6 +70,27 @@ h1 {
   letter-spacing: -0.04em;
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+h2 {
+  font-family: var(--font);
+  color: var(--foreground);
+  font-size: 2rem;
+  transition: var(--transition);
+  letter-spacing: -0.04em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h3 {
+  font-family: var(--font);
+  color: var(--foreground);
+  font-size: 1.2rem;
+  transition: var(--transition);
+  letter-spacing: -0.04em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1rem;
 }
 
 h1:first-child {
@@ -119,6 +145,10 @@ a {
   text-decoration: none;
 }
 
+section a {
+  cursor: pointer;
+}
+
 p a,
 p a:visited {
   color: var(--midground);
@@ -160,7 +190,12 @@ p a:visited {
 
   h2 {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 1.9rem;
   }
 
   p {
@@ -168,8 +203,12 @@ p a:visited {
     font-size: 1rem;
   }
 
-  hgroup {
+  article > hgroup {
     flex-wrap: wrap;
+  }
+
+  section {
+    border-left-width: 5px;
   }
 }
 

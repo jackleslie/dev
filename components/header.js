@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default ({ title = '' }) => {
+export default function Header({ title = '' }) {
   const toggle = () => {
     const isDark = window.localStorage.getItem('jackleslie-dark-mode') != 0;
     window.localStorage.setItem('jackleslie-dark-mode', isDark ? 0 : 1);
@@ -33,4 +33,4 @@ export default ({ title = '' }) => {
       </button>
     </article>
   );
-};
+}

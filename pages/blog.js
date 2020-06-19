@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Header } from '../components';
+import { Header, Post } from '../components';
 
 export default function Blog() {
   return (
@@ -11,16 +11,13 @@ export default function Blog() {
 
       <Header title="Blog" />
 
-      <h2>The Curious Case of PropTypes</h2>
-
-      <p>
-        <a className="blog" href="https://github.com/facebook/prop-types">
-          PropTypes
-        </a>{' '}
-        started off its life being exposed in the core React module, but has since been extracted
-        into its own package. This has not slowed down popularity however, it is in the top 10 most
-        depended on packages on NPM.
-      </p>
+      <Post
+        title="The Curious Case of PropTypes"
+        date="19th June 2020"
+        summary="PropTypes is one of the most popular NPM modules today, 
+        but unknowlingly causes many packages to suffer from bloat. Why is
+        this package end up in production code when it is only used for development?"
+      />
     </main>
   );
 }
