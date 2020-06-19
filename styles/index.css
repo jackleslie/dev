@@ -93,10 +93,6 @@ h3 {
   line-height: 1rem;
 }
 
-h1:first-child {
-  cursor: pointer;
-}
-
 p {
   font-family: var(--font);
   color: var(--midground);

@@ -17,7 +17,11 @@ export default function Header({ title = '' }) {
               <h1>Jack Leslie</h1>
             </a>
           </Link>
-          <h1> / {title}</h1>
+          <Link href={`/${title.toLowerCase()}`}>
+            <a>
+              <h1> / {title}</h1>
+            </a>
+          </Link>
         </hgroup>
       ) : (
         <Link href="/">

@@ -2,7 +2,7 @@ article > hgroup {
   display: flex;
 }
 
-article > hgroup h1:first-child {
+article > hgroup a:first-child h1 {
   margin-right: 6px;
   opacity: 0.2;
 }
