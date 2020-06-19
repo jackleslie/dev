@@ -145,10 +145,6 @@ a {
   text-decoration: none;
 }
 
-section a {
-  cursor: pointer;
-}
-
 p a,
 p a:visited {
   color: var(--midground);
