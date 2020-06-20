@@ -1,0 +1,34 @@
+.sun {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.moon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: var(--black);
+  border-radius: 50%;
+  left: var(--moon-left);
+  top: var(--moon-top);
+  transition: var(--transition);
+}
+
+.path {
+  display: flex;
+}
+
+.pathRoot {
+  margin-right: 6px;
+  opacity: 0.2;
+}
+
+@media only screen and (max-width: 500px) {
+  .path {
+    flex-wrap: wrap;
+  }
+}

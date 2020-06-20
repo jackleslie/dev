@@ -1,13 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
+import styles from './post.module.css';
 
 export default function Post({ title = '', date = '', summary = '', slug = '/', children = null }) {
   return (
-    <section>
+    <section className={styles.post}>
       <hgroup>
         <Link href={`/blog/${slug}`}>
           <a>
-            <h2>{title}</h2>
+            <h2 className={styles.postTitle}>{title}</h2>
           </a>
         </Link>
         <h3>{date}</h3>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import styles from './header.module.css';
 
 export default function Header({ title = '' }) {
   const toggle = () => {
@@ -11,10 +12,10 @@ export default function Header({ title = '' }) {
   return (
     <article>
       {title ? (
-        <hgroup>
+        <hgroup className={styles.path}>
           <Link href="/">
             <a>
-              <h1>Jack Leslie</h1>
+              <h1 className={styles.pathRoot}>Jack Leslie</h1>
             </a>
           </Link>
           <Link href={`/${title.toLowerCase()}`}>
@@ -32,8 +33,8 @@ export default function Header({ title = '' }) {
       )}
 
       <button aria-label="Toggle Theme" title="Toggle Theme" type="button" onClick={toggle}>
-        <div aria-label="Sun" className="sun" />
-        <div aria-label="Moon" className="moon" />
+        <div aria-label="Sun" className={styles.sun} />
+        <div aria-label="Moon" className={styles.moon} />
       </button>
     </article>
   );
