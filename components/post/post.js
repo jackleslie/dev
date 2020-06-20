@@ -17,7 +17,14 @@ export default function Post({ title = '', date = '', summary = '', slug = '/', 
         )}
         <h3>{date}</h3>
       </hgroup>
-      {children || <p>{summary}</p>}
+      {children || (
+        <p>
+          {summary}{' '}
+          <Link href={`/blog/${slug}`}>
+            <a className="blog">Read more</a>
+          </Link>
+        </p>
+      )}
     </section>
   );
 }
