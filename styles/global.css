@@ -100,23 +100,6 @@ p {
   transition: var(--transition);
 }
 
-button {
-  position: relative;
-  appearance: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  line-height: 0;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  background: none;
-  margin-right: 0.5rem;
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
-}
-
 a {
   text-decoration: none;
 }

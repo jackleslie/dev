@@ -32,7 +32,13 @@ export default function Header({ title = '' }) {
         </Link>
       )}
 
-      <button aria-label="Toggle Theme" title="Toggle Theme" type="button" onClick={toggle}>
+      <button
+        className={styles.toggle}
+        aria-label="Toggle Theme"
+        title="Toggle Theme"
+        type="button"
+        onClick={toggle}
+      >
         <div aria-label="Sun" className={styles.sun} />
         <div aria-label="Moon" className={styles.moon} />
       </button>
