@@ -6,11 +6,15 @@ export default function Post({ title = '', date = '', summary = '', slug = '/', 
   return (
     <section className={styles.post}>
       <hgroup>
-        <Link href={`/blog/${slug}`}>
-          <a>
-            <h2 className={styles.postTitle}>{title}</h2>
-          </a>
-        </Link>
+        {summary ? (
+          <Link href={`/blog/${slug}`}>
+            <a>
+              <h2 className={styles.postTitle}>{title}</h2>
+            </a>
+          </Link>
+        ) : (
+          <h2 className={styles.postTitle}>{title}</h2>
+        )}
         <h3>{date}</h3>
       </hgroup>
       {children || <p>{summary}</p>}
