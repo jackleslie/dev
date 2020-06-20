@@ -13,7 +13,7 @@ export default function Blog() {
 
       <Post
         title="The Curious Case of PropTypes"
-        date="19th June 2020"
+        date="20th June 2020"
         summary="PropTypes is one of the most popular NPM modules today, 
         but unknowlingly causes many packages to suffer from bloat. Why is
         this package end up in production code when it is only used for development?"
