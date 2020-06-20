@@ -2,11 +2,17 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './post.module.css';
 
-export default function Post({ title = '', date = '', summary = '', slug = '/', children = null }) {
+export default function Post({
+  title = '',
+  date = '',
+  isSummary = false,
+  slug = '/',
+  children = null,
+}) {
   return (
     <section className={styles.post}>
       <hgroup>
-        {summary ? (
+        {isSummary ? (
           <Link href={`/blog/${slug}`}>
             <a>
               <h2 className={styles.postTitle}>{title}</h2>
@@ -17,13 +23,15 @@ export default function Post({ title = '', date = '', summary = '', slug = '/', 
         )}
         <h3>{date}</h3>
       </hgroup>
-      {children || (
+      {isSummary ? (
         <p>
-          {summary}{' '}
+          {children}{' '}
           <Link href={`/blog/${slug}`}>
             <a className="blog">Read more</a>
           </Link>
         </p>
+      ) : (
+        children
       )}
     </section>
   );

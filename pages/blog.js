@@ -11,14 +11,11 @@ export default function Blog() {
 
       <Header title="Blog" />
 
-      <Post
-        title="The Curious Case of PropTypes"
-        date="20th June 2020"
-        summary="PropTypes is one of the most popular NPM modules today, 
-        but unknowlingly causes many packages to suffer from bloat. Why is
-        this package end up in production code when it is only used for development?"
-        slug="prop-types"
-      />
+      <Post title="The Curious Case of PropTypes" date="20th June 2020" slug="prop-types" isSummary>
+        PropTypes is one of the most popular NPM modules today, but unknowlingly causes many
+        packages to suffer from bloat. Why is this package end up in production code when it is only
+        used for development?
+      </Post>
     </main>
   );
 }
