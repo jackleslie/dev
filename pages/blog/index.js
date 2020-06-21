@@ -6,7 +6,7 @@ export default function Blog({ posts = [] }) {
   return (
     <Layout siteTitle="Jack Leslie / Blog" pageTitle="Blog">
       {posts.map(({ frontmatter, slug }) => (
-        <Post title={frontmatter.title} date={frontmatter.date} slug={slug} isSummary>
+        <Post key={slug} title={frontmatter.title} date={frontmatter.date} slug={slug} isSummary>
           {frontmatter.summary}
         </Post>
       ))}
