@@ -1,19 +1,14 @@
 import React from 'react';
-import matter from 'gray-matter';
-import ReactMarkdown from 'react-markdown';
+import { Converter } from 'showdown';
 import { Layout, Post } from '../../components';
 
-export default function BlogPost({ frontmatter, markdownBody }) {
-  if (!frontmatter) {
-    return <></>;
-  }
-
-  const { title, date } = frontmatter;
+export default function BlogPost({ meta, body }) {
+  const { title, date } = meta;
 
   return (
     <Layout siteTitle={title} pageTitle="Blog">
       <Post title={title} date={date}>
-        <ReactMarkdown source={markdownBody} />
+        {body}
       </Post>
     </Layout>
   );
@@ -23,12 +18,14 @@ export async function getStaticProps({ ...ctx }) {
   const { slug } = ctx.params;
 
   const content = await import(`../../posts/${slug}.md`);
-  const data = matter(content.default);
+  const converter = new Converter({ metadata: true });
+  const body = converter.makeHtml(content.default);
+  const meta = converter.getMetadata();
 
   return {
     props: {
-      frontmatter: data.data,
-      markdownBody: data.content,
+      meta,
+      body,
     },
   };
 }

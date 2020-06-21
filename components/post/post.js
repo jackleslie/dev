@@ -31,7 +31,7 @@ export default function Post({
           </Link>
         </p>
       ) : (
-        children
+        <div dangerouslySetInnerHTML={{ __html: children }} />
       )}
     </section>
   );
