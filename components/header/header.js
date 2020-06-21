@@ -10,7 +10,7 @@ export default function Header({ title = '' }) {
   };
 
   return (
-    <article>
+    <article className={styles.header}>
       {title ? (
         <hgroup className={styles.path}>
           <Link href="/">
