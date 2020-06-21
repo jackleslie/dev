@@ -1,8 +1,7 @@
 import React from 'react';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
-
-import { PostPage } from '../../components';
+import { Layout, Post } from '../../components';
 
 export default function BlogPost({ frontmatter, markdownBody }) {
   if (!frontmatter) {
@@ -12,9 +11,11 @@ export default function BlogPost({ frontmatter, markdownBody }) {
   const { title, date } = frontmatter;
 
   return (
-    <PostPage title={title} date={date}>
-      <ReactMarkdown source={markdownBody} />
-    </PostPage>
+    <Layout siteTitle={title} pageTitle="Blog">
+      <Post title={title} date={date}>
+        <ReactMarkdown source={markdownBody} />
+      </Post>
+    </Layout>
   );
 }
 

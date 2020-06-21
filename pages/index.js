@@ -1,17 +1,10 @@
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
-import { Header } from '../components';
+import { Layout } from '../components';
 
 export default function Index() {
   return (
-    <main>
-      <Head>
-        <title>Jack Leslie</title>
-      </Head>
-
-      <Header />
-
+    <Layout siteTitle="Jack Leslie">
       <p>
         Final year Computer Science student at the University of St Andrews, frontend developer and
         JavaScript enthusiast.
@@ -41,6 +34,6 @@ export default function Index() {
         </a>
         .
       </p>
-    </main>
+    </Layout>
   );
 }

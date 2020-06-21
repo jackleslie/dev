@@ -1,23 +1,16 @@
 import React from 'react';
-import Head from 'next/head';
 import matter from 'gray-matter';
-import { Header, Post } from '../components';
+import { Layout, Post } from '../components';
 
 export default function Blog({ posts = [] }) {
   return (
-    <main>
-      <Head>
-        <title>Jack Leslie / Blog</title>
-      </Head>
-
-      <Header title="Blog" />
-
+    <Layout siteTitle="Jack Leslie / Blog" pageTitle="Blog">
       {posts.map(({ frontmatter, slug }) => (
         <Post title={frontmatter.title} date={frontmatter.date} slug={slug} isSummary>
           {frontmatter.summary}
         </Post>
       ))}
-    </main>
+    </Layout>
   );
 }
 
