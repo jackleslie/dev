@@ -5,29 +5,30 @@ import styles from './post.module.css';
 export default function Post({
   title = '',
   date = '',
-  isSummary = false,
+  isTldr = false,
   slug = '/',
   children = null,
 }) {
   return (
     <section className={styles.post}>
       <hgroup>
-        {isSummary ? (
+        {isTldr ? (
           <Link href={`/blog/${slug}`}>
             <a>
-              <h2 className={styles.postTitle}>{title}</h2>
+              <h2>{title}</h2>
             </a>
           </Link>
         ) : (
-          <h2 className={styles.postTitle}>{title}</h2>
+          <h2>{title}</h2>
         )}
         <h3>{date}</h3>
       </hgroup>
-      {isSummary ? (
+      {isTldr ? (
         <p>
+          <b>tl;dr: </b>
           {children}{' '}
           <Link href={`/blog/${slug}`}>
-            <a className="blog">Read more</a>
+            <a>Read more</a>
           </Link>
         </p>
       ) : (

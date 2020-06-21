@@ -17,6 +17,7 @@
     "@transferwise/eslint-config": "^5.0.3",
     "commitlint": "^9.0.1",
     "eslint": "^7.0.0",
+    "eslint-plugin-css-modules": "^2.11.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -38,7 +39,8 @@
   "lint-staged": {
     "styles/*.css": "stylelint --fix",
     "components/**/*.module.css": "stylelint --fix",
-    "pages/**/*.js": "eslint --fix --quiet"
+    "pages/**/*.js": "eslint --fix --quiet",
+    "components/**/*.js": "eslint --fix --quiet"
   },
   "commitlint": {
     "extends": [

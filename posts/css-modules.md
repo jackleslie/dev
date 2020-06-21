@@ -1,0 +1,15 @@
+---
+title: Linting with CSS Modules
+date: 21st June 2020
+tldr: When using CSS Modules, having a CSS linter such as stylelint isn't enough - you also need to use JavaScript linter with functionality to lint the JavaScript code loading the CSS Module classes.
+---
+
+Originally this website only had a single page, no components and no CSS classes, using only a single [classless](https://css-tricks.com/no-class-css-frameworks/) global stylesheet. Modern CSS is so powerful that - despite the size of the website - it had dark theme toggling, responsive layouts and [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) without a preprocessor or CSS-in-JS library. However, when I decided to add the blog I needed to utilise CSS classes as the global classless stylesheet simply didn't scale the way I wanted it to.
+
+I already had a CSS linter set up to lint my global stylesheet, so in order to maintain this set up without too much faff I opted to use [CSS Modules](https://github.com/css-modules/css-modules) so I could continue to lint the styles in a similar way with the [stylelint](https://stylelint.io/) CLI (although I later found out that stylelint can also lint CSS-in-JS libraries such as [styled-components](https://styled-components.com/)). 
+
+With all the CSS refactored and stylelint linting my new CSS files, alongside my existing [ESLint](https://eslint.org/) set up, I assumed that the code was essentially fully statically analysed. By ESLint extending a popular config such as [Airbnb's](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) and stylelint using its [standard config](https://github.com/stylelint/stylelint-config-standard) this plucky website's code was linted using industry standard configurations.
+
+I soon came across an ESLint plugin called [eslint-plugin-css-modules](https://www.npmjs.com/package/eslint-plugin-css-modules) which initially confused me as I didn't see how it would fit in to the linting set up, how much more analysis could be done? What I didn't realise was that there was interaction in my code that was being missed by my linters, and in fact the CSS linter had nothing to do with it. Since CSS modules are harnessed programatically in React code (assigning a locally scoped class to a `className` in a component) this is JavaScript syntax that needs to be linted rather than CSS syntax. Since CSS Modules aren't generally accounted for in many popular ESLint configs its up to the individual to lint this interaction with CSS Modules in their JavaScript code.
+
+This plugin helped instantly when introduced to the linting process by highlighting unused classes in module files. If you're using CSS Modules in your project and ESLint as your JavaScript linter then a plugin like this is extremely helpful - even though you're writing CSS you still need to lint the programmatic interaction with the module through your JavaScript code.

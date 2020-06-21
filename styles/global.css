@@ -95,6 +95,16 @@ p a:visited {
   text-underline-position: under;
 }
 
+code {
+  transition: var(--transition);
+  font-family: Menlo, monospace;
+  color: var(--background);
+  background-color: var(--foreground);
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
 .transferwise,
 .transferwise::selection {
   text-decoration-color: var(--transferwise);
@@ -134,6 +144,10 @@ p a:visited {
   p {
     letter-spacing: 0.5px;
     font-size: 1rem;
+  }
+
+  code {
+    font-size: 0.7rem;
   }
 }
 

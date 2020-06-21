@@ -5,9 +5,9 @@ import { Layout, Post } from '../../components';
 export default function Blog({ posts = [] }) {
   return (
     <Layout siteTitle="Jack Leslie / Blog" pageTitle="Blog">
-      {posts.map(({ title, date, summary, slug }) => (
-        <Post key={slug} title={title} date={date} slug={slug} isSummary>
-          {summary}
+      {posts.map(({ title, date, tldr, slug }) => (
+        <Post key={slug} title={title} date={date} slug={slug} isTldr>
+          {tldr}
         </Post>
       ))}
     </Layout>
@@ -24,12 +24,12 @@ export async function getStaticProps() {
       const content = values[index];
       const converter = new Converter({ metadata: true });
       converter.makeHtml(content.default);
-      const { title, date, summary } = converter.getMetadata();
+      const { title, date, tldr } = converter.getMetadata();
 
       return {
         title,
         date,
-        summary,
+        tldr,
         slug,
       };
     });
