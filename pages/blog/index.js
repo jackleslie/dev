@@ -1,6 +1,6 @@
 import React from 'react';
 import matter from 'gray-matter';
-import { Layout, Post } from '../components';
+import { Layout, Post } from '../../components';
 
 export default function Blog({ posts = [] }) {
   return (
@@ -30,7 +30,7 @@ export async function getStaticProps() {
       };
     });
     return data;
-  })(require.context('../posts', true, /\.md$/));
+  })(require.context('../../posts', true, /\.md$/));
 
   return {
     props: {
