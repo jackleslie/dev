@@ -2,9 +2,7 @@ import React from 'react';
 import { Converter } from 'showdown';
 import { Layout, Post } from '../../components';
 
-export default function BlogPost({ meta, body }) {
-  const { title, date } = meta;
-
+export default function BlogPost({ title = '', date = '', body = '' }) {
   return (
     <Layout siteTitle={title} pageTitle="Blog">
       <Post title={title} date={date}>
@@ -19,11 +17,12 @@ export async function getStaticProps({ ...ctx }) {
   const content = await import(`../../posts/${slug}.md`);
   const converter = new Converter({ metadata: true });
   const body = converter.makeHtml(content.default);
-  const meta = converter.getMetadata();
+  const { title, date } = converter.getMetadata();
 
   return {
     props: {
-      meta,
+      title,
+      date,
       body,
     },
   };

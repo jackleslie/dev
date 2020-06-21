@@ -1,5 +1,5 @@
 import React from 'react';
-import matter from 'gray-matter';
+import { Converter } from 'showdown';
 import { Layout, Post } from '../../components';
 
 export default function Blog({ posts = [] }) {
@@ -21,9 +21,11 @@ export async function getStaticProps() {
 
     const data = keys.map((key, index) => {
       const slug = key.replace(/^.*[\\/]/, '').slice(0, -3);
-      const value = values[index];
-      const document = matter(value.default);
-      const { title, date, summary } = document.data;
+      const content = values[index];
+      const converter = new Converter({ metadata: true });
+      converter.makeHtml(content.default);
+      const { title, date, summary } = converter.getMetadata();
+
       return {
         title,
         date,
