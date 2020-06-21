@@ -13,7 +13,10 @@
     "showdown": "^1.9.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
     "@transferwise/eslint-config": "^5.0.3",
+    "commitlint": "^9.0.1",
     "eslint": "^7.0.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.20.2",
@@ -29,12 +32,18 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e -V"
     }
   },
   "lint-staged": {
     "styles/*.css": "stylelint --fix",
     "components/**/*.module.css": "stylelint --fix",
     "pages/**/*.js": "eslint --fix --quiet"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
