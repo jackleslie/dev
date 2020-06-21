@@ -5,9 +5,9 @@ import { Layout, Post } from '../../components';
 export default function Blog({ posts = [] }) {
   return (
     <Layout siteTitle="Jack Leslie / Blog" pageTitle="Blog">
-      {posts.map(({ frontmatter, slug }) => (
-        <Post key={slug} title={frontmatter.title} date={frontmatter.date} slug={slug} isSummary>
-          {frontmatter.summary}
+      {posts.map(({ title, date, summary, slug }) => (
+        <Post key={slug} title={title} date={date} slug={slug} isSummary>
+          {summary}
         </Post>
       ))}
     </Layout>
@@ -23,12 +23,15 @@ export async function getStaticProps() {
       const slug = key.replace(/^.*[\\/]/, '').slice(0, -3);
       const value = values[index];
       const document = matter(value.default);
+      const { title, date, summary } = document.data;
       return {
-        frontmatter: document.data,
-        markdownBody: document.content,
+        title,
+        date,
+        summary,
         slug,
       };
     });
+
     return data;
   })(require.context('../../posts', true, /\.md$/));
 

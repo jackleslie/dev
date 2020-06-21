@@ -16,7 +16,6 @@ export default function BlogPost({ meta, body }) {
 
 export async function getStaticProps({ ...ctx }) {
   const { slug } = ctx.params;
-
   const content = await import(`../../posts/${slug}.md`);
   const converter = new Converter({ metadata: true });
   const body = converter.makeHtml(content.default);
@@ -33,11 +32,12 @@ export async function getStaticProps({ ...ctx }) {
 export async function getStaticPaths() {
   const blogSlugs = ((context) => {
     const keys = context.keys();
+
     const data = keys.map((key) => {
       const slug = key.replace(/^.*[\\/]/, '').slice(0, -3);
-
       return slug;
     });
+
     return data;
   })(require.context('../../posts', true, /\.md$/));
 
