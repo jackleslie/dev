@@ -16,6 +16,7 @@
     color 0.2s ease,
     background-color 0.2s ease,
     text-decoration-color 0.2s ease,
+    opacity 0.2s ease,
     top 0.2s ease,
     left 0.2s ease;
   --moon-top: 0;
@@ -43,27 +44,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  padding: 2em;
-  max-width: var(--main-content);
-  line-height: 1.9;
-  margin: 0 auto;
-}
-
-article {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 h1 {
   font-family: var(--font);
   color: var(--foreground);
   font-size: 3rem;
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
   transition: var(--transition);
   letter-spacing: -0.04em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h2 {
+  font-family: var(--font);
+  color: var(--foreground);
+  font-size: 2rem;
+  transition: var(--transition);
+  letter-spacing: -0.04em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h3 {
+  font-family: var(--font);
+  color: var(--foreground);
+  font-size: 1.2rem;
+  transition: var(--transition);
+  letter-spacing: -0.04em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1rem;
 }
 
 p {
@@ -73,50 +82,39 @@ p {
   transition: var(--transition);
 }
 
-button {
-  position: relative;
-  appearance: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 0;
-  line-height: 0;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  background: none;
-  margin-right: 0.5rem;
-  -webkit-tap-highlight-color: transparent;
+a {
+  text-decoration: none;
 }
 
-.sun {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  background-color: var(--white);
-  border-radius: 50%;
-  transition: var(--transition);
-}
-
-.moon {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  background-color: var(--black);
-  border-radius: 50%;
-  left: var(--moon-left);
-  top: var(--moon-top);
-  transition: var(--transition);
-}
-
-a,
-a:visited {
+p a,
+p a:visited {
   color: var(--midground);
   font-weight: 500;
   transition: var(--transition);
   text-decoration-line: underline;
   text-underline-position: under;
+}
+
+code {
+  transition: var(--transition);
+  font-family: Menlo, monospace;
+  background-color: var(--foreground);
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+pre {
+  transition: var(--transition);
+  font-family: Menlo, monospace;
+  background-color: var(--foreground);
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+pre code {
+  background-color: var(--foreground) !important;
 }
 
 .transferwise,
@@ -139,19 +137,29 @@ a:visited {
   text-decoration-color: var(--keybase);
 }
 
-@media only screen and (max-width: 400px) {
-  main {
-    padding: 1em 1.5em;
-  }
-
+@media only screen and (max-width: 500px) {
   h1 {
     font-size: 2.4rem;
     line-height: 3rem;
   }
 
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 1.9rem;
+  }
+
   p {
     letter-spacing: 0.5px;
     font-size: 1rem;
+  }
+
+  code {
+    font-size: 0.7rem;
   }
 }
 

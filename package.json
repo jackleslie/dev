@@ -6,12 +6,19 @@
   },
   "dependencies": {
     "next": "^9.4.0",
+    "raw-loader": "^4.0.1",
     "react": "16.11.0",
-    "react-dom": "16.11.0"
+    "react-dom": "16.11.0",
+    "showdown": "^1.9.1",
+    "showdown-highlight": "^2.1.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
     "@transferwise/eslint-config": "^5.0.3",
+    "commitlint": "^9.0.1",
     "eslint": "^7.0.0",
+    "eslint-plugin-css-modules": "^2.11.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -26,11 +33,19 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e -V"
     }
   },
   "lint-staged": {
-    "style.css": "stylelint --fix",
-    "pages/**/*.js": "eslint --fix --quiet"
+    "styles/*.css": "stylelint --fix",
+    "components/**/*.module.css": "stylelint --fix",
+    "pages/**/*.js": "eslint --fix --quiet",
+    "components/**/*.js": "eslint --fix --quiet"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }

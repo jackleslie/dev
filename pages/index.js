@@ -1,27 +1,10 @@
 import React from 'react';
-import Head from 'next/head';
+import Link from 'next/link';
+import { Layout } from '../components';
 
-export default () => {
-  const toggle = () => {
-    const isDark = window.localStorage.getItem('jackleslie-dark-mode') != 0;
-    window.localStorage.setItem('jackleslie-dark-mode', isDark ? 0 : 1);
-    document.documentElement.classList.toggle('dark');
-  };
-
+export default function Index() {
   return (
-    <main>
-      <Head>
-        <title>Jack Leslie</title>
-      </Head>
-
-      <article>
-        <h1>Jack Leslie</h1>
-        <button aria-label="Toggle Theme" title="Toggle Theme" type="button" onClick={toggle}>
-          <div aria-label="Sun" className="sun" />
-          <div aria-label="Moon" className="moon" />
-        </button>
-      </article>
-
+    <Layout siteTitle="Jack Leslie">
       <p>
         Final year Computer Science student at the University of St Andrews, frontend developer and
         JavaScript enthusiast.
@@ -34,6 +17,13 @@ export default () => {
         and will be returning as a graduate software engineer.
       </p>
       <p>
+        Sometimes I write about JavaScript and frontend development, you can read my posts on my{' '}
+        <Link href="/blog">
+          <a>blog</a>
+        </Link>
+        .
+      </p>
+      <p>
         If you want to get in touch you can{' '}
         <a href="mailto:jackleslie@protonmail.com" className="protonmail">
           email
@@ -44,6 +34,6 @@ export default () => {
         </a>
         .
       </p>
-    </main>
+    </Layout>
   );
-};
+}

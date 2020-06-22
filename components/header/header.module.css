@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+
+.toggle {
+  position: relative;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background: none;
+  margin-right: 0.5rem;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.sun {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.moon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: var(--black);
+  border-radius: 50%;
+  left: var(--moon-left);
+  top: var(--moon-top);
+  transition: var(--transition);
+}
+
+.path {
+  display: flex;
+}
+
+.pathRoot {
+  margin-right: 6px;
+  opacity: 0.2;
+}
+
+@media only screen and (max-width: 500px) {
+  .path {
+    flex-wrap: wrap;
+  }
+}

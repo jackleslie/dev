@@ -1,0 +1,9 @@
+.post {
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 500px) {
+  .post {
+    margin-top: 3em;
+  }
+}
