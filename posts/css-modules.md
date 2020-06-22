@@ -21,7 +21,7 @@ export default function Header({ children }) {
 ```
 
 
-Even though the CSS is linted in itself by stylelint, there is no way to check, for example, if any of the classes in the CSS Module are unused:
+Even though the CSS syntax is linted in itself by stylelint, there is no way to check, for example, if any of the classes in the CSS Module are unused:
 
 ```css
 /* header.module.css */
@@ -35,7 +35,7 @@ Even though the CSS is linted in itself by stylelint, there is no way to check, 
 }
 ```
 
-Even though this is an issue regarding the CSS Modules being introduced, it is in fact the JavaScript linter's job to analyse this aspect of the code, not the CSS linter. In order to fill this gap in analysis the ESLint plugin [eslint-plugin-css-modules](https://www.npmjs.com/package/eslint-plugin-css-modules) can be used. Now, if an unused CSS Module class is present then ESLint will flag an error:
+Despite it being in the domain of CSS, it is in fact the JavaScript linter's job to analyse this aspect of the code, not the CSS linter. In order to fill this gap in analysis the ESLint plugin [eslint-plugin-css-modules](https://www.npmjs.com/package/eslint-plugin-css-modules) can be used. Now, if an unused CSS Module class is present then ESLint will flag an error:
 
 ```
 error Unused classes found in header.module.css: headerIcon css-modules/no-unused-class
