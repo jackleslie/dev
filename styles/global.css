@@ -98,11 +98,23 @@ p a:visited {
 code {
   transition: var(--transition);
   font-family: Menlo, monospace;
-  color: var(--background);
   background-color: var(--foreground);
   padding: 5px;
   font-size: 1rem;
   border-radius: 5px;
+}
+
+pre {
+  transition: var(--transition);
+  font-family: Menlo, monospace;
+  background-color: var(--foreground);
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+pre code {
+  background-color: var(--foreground) !important;
 }
 
 .transferwise,

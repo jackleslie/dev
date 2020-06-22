@@ -9,7 +9,8 @@
     "raw-loader": "^4.0.1",
     "react": "16.11.0",
     "react-dom": "16.11.0",
-    "showdown": "^1.9.1"
+    "showdown": "^1.9.1",
+    "showdown-highlight": "^2.1.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
