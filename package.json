@@ -42,7 +42,8 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -e -V"
+      "commit-msg": "commitlint -e -V",
+      "pre-push": "jest"
     }
   },
   "lint-staged": {
