@@ -13,7 +13,7 @@ export default function Post({
     <section className={styles.post}>
       <hgroup>
         {isTldr ? (
-          <Link href={`/blog/${slug}`}>
+          <Link href="/blog/[slug]" as={`/blog/${slug}`}>
             <a>
               <h2>{title}</h2>
             </a>
@@ -27,7 +27,7 @@ export default function Post({
         <p>
           <b>tl;dr: </b>
           {children}{' '}
-          <Link href={`/blog/${slug}`}>
+          <Link href="/blog/[slug]" as={`/blog/${slug}`}>
             <a>Read more</a>
           </Link>
         </p>
