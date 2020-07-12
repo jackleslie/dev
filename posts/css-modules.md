@@ -1,6 +1,6 @@
 ---
 title: Linting with CSS Modules
-date: 22nd June 2020
+date: 22 June 2020
 tldr: When using CSS Modules, having a CSS syntax linter such as stylelint isn't enough - you also need to use a JavaScript linter such as ESLint with functionality to lint the CSS Module being imported (e.g. eslint-plugin-css-modules).
 ---
 
