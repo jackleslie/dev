@@ -6,15 +6,11 @@ export default function Index() {
   return (
     <Layout siteTitle="Jack Leslie">
       <p>
-        Final year Computer Science student at the University of St Andrews, frontend developer and
-        JavaScript enthusiast.
-      </p>
-      <p>
-        I was an intern at{' '}
+        Incoming graduate software engineer at{' '}
         <a href="https://transferwise.com" className="transferwise">
           TransferWise
-        </a>{' '}
-        and will be returning as a graduate software engineer.
+        </a>
+        , working on the SMB product team.
       </p>
       <p>
         Sometimes I write about JavaScript and frontend development, you can read my posts on my{' '}
