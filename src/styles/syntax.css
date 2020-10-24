@@ -14,7 +14,7 @@
   --purple: #dcc6e0;
 }
 
-:root.dark {
+[data-theme="dark"] {
   --comment: #696969;
   --red: #d91e18;
   --orange: #aa5d00;
@@ -50,7 +50,7 @@
 .hljs-type,
 .hljs-params,
 .hljs-meta,
-.hljs-link, {
+.hljs-link {
   color: var(--orange);
 }
 

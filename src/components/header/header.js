@@ -1,13 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+
 import styles from './header.module.css';
+import { useToggle } from '../../hooks';
 
 export default function Header({ title = '' }) {
-  const toggle = () => {
-    const isDark = window.localStorage.getItem('jackleslie-dark-mode') != 0;
-    window.localStorage.setItem('jackleslie-dark-mode', isDark ? 0 : 1);
-    document.documentElement.classList.toggle('dark');
-  };
+  const [toggle] = useToggle();
 
   return (
     <article className={styles.header}>
