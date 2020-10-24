@@ -15,7 +15,7 @@ export default function BlogPost({ title = '', date = '', body = '' }) {
 
 export async function getStaticProps({ ...ctx }) {
   const { slug } = ctx.params;
-  const content = await import(`../../posts/${slug}.md`);
+  const content = await import(`../../../posts/${slug}.md`);
   const converter = new Converter({ metadata: true, extensions: [showdownHighlight] });
   const body = converter.makeHtml(content.default);
   const { title, date } = converter.getMetadata();
