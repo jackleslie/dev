@@ -1,14 +1,16 @@
 {
+  "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
+    "postbuild": "es-check es5 .next/static/**/*.js",
     "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "next": "^9.5.3",
+    "next": "^10.0.0",
     "next-themes": "^0.0.5",
     "react": "16.11.0",
     "react-dom": "16.11.0",
@@ -26,6 +28,7 @@
     "@typescript-eslint/parser": "^4.4.1",
     "babel-jest": "^26.0.1",
     "commitlint": "^9.0.1",
+    "es-check": "^5.1.1",
     "eslint": "^7.0.0",
     "eslint-plugin-css-modules": "^2.11.0",
     "eslint-plugin-fp": "^2.3.0",
