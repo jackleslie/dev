@@ -1,4 +1,4 @@
-name: Test, lint & build
+name: CI
 on: push
 
 jobs:
