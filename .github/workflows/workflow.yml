@@ -23,7 +23,7 @@ jobs:
           key: ${{ runner.os }}-jack-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-jack-
-      - run: yarn install --production
+      - run: yarn install --frozen-lockfile --production --ignore-optional
       - run: yarn build
 
   test:
