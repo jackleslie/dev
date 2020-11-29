@@ -1,0 +1,25 @@
+name: Test, lint & build
+on: push
+
+jobs:
+  test-lint-build:
+    name: Test, lint & build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: "12"
+          check-latest: true
+      - uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            ${{ github.workspace }}/.next/cache
+          key: ${{ github.repository }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ github.repository }}-
+      - run: yarn install --frozen-lockfile
+      - run: yarn test
+      - run: yarn lint
+      - run: yarn build
