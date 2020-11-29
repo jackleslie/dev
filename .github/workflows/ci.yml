@@ -1,9 +1,9 @@
-name: Test & build
+name: Test, lint & build
 on: push
 
 jobs:
-  test:
-    name: Test
+  test-lint-build:
+    name: Test, lint & build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,4 +21,5 @@ jobs:
             ${{ github.repository }}-
       - run: yarn install --frozen-lockfile
       - run: yarn test
+      - run: yarn lint
       - run: yarn build

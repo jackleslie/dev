@@ -7,7 +7,10 @@
     "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "eslint": "eslint src/**/*.js --fix --quiet",
+    "stylelint": "stylelint src/**/*.css --fix",
+    "lint": "yarn eslint && yarn stylelint"
   },
   "dependencies": {
     "next": "^10.0.0",
@@ -55,10 +58,8 @@
     }
   },
   "lint-staged": {
-    "styles/*.css": "stylelint --fix",
-    "components/**/*.module.css": "stylelint --fix",
-    "pages/**/*.js": "eslint --fix --quiet",
-    "components/**/*.js": "eslint --fix --quiet"
+    "src/**/*.css": "stylelint --fix",
+    "src/**/*.js": "eslint --fix --quiet"
   },
   "commitlint": {
     "extends": [
