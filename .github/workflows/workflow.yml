@@ -43,4 +43,5 @@ jobs:
           key: ${{ runner.os }}-jack-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-jack-
+      - run: yarn install
       - run: yarn build
