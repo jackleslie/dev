@@ -23,7 +23,7 @@ jobs:
             ${{ runner.os }}-yarn-
       - run: yarn install
 
-  Build:
+  build:
     name: Build
     runs-on: ubuntu-latest
     steps:
