@@ -14,7 +14,7 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: |
-            node_modules
+            ${{ github.workspace }}/node_modules
             ${{ github.workspace }}/.next/cache
           key: ${{ github.repository }}-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
