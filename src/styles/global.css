@@ -102,6 +102,7 @@ code {
   padding: 5px;
   font-size: 1rem;
   border-radius: 5px;
+  color: var(--background);
 }
 
 pre {
@@ -115,6 +116,12 @@ pre {
 
 pre code {
   background-color: var(--foreground) !important;
+}
+
+blockquote {
+  border-left: solid 4px var(--foreground);
+  margin-inline-start: 0;
+  padding-inline-start: 40px;
 }
 
 .transferwise,
