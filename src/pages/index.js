@@ -10,7 +10,7 @@ export default function Index() {
         <a href="https://transferwise.com" className="transferwise">
           TransferWise
         </a>
-        , working on the SMB product team.
+        , working on the Business Growth product team.
       </p>
       <p>
         Sometimes I write about JavaScript and frontend development, you can read my posts on my{' '}
