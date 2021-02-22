@@ -13,7 +13,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="description" content="Jack Leslie personal website" />
         <meta name="author" content="Jack Leslie" />
         <meta property="og:image" content="/favicon.ico" />
-        <meta property="og:description" content="Graduate software engineer at TransferWise" />
+        <meta property="og:description" content="Graduate software engineer at Wise" />
         <meta property="og:title" content="Jack Leslie" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

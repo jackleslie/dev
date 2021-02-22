@@ -7,8 +7,8 @@ export default function Index() {
     <Layout siteTitle="Jack Leslie">
       <p>
         Graduate software engineer at{' '}
-        <a href="https://transferwise.com" className="transferwise">
-          TransferWise
+        <a href="https://wise.com" className="wise">
+          Wise
         </a>
         , working on the Business Growth product team.
       </p>

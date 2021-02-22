@@ -8,7 +8,7 @@
   --foreground: var(--black);
   --midground: var(--black-grey);
   --background: var(--white);
-  --transferwise: #00b9ff;
+  --wise: #00b9ff;
   --blog: #999;
   --protonmail: #8a90c7;
   --keybase: #ff6f21;
@@ -124,9 +124,9 @@ blockquote {
   padding-inline-start: 40px;
 }
 
-.transferwise,
-.transferwise::selection {
-  text-decoration-color: var(--transferwise);
+.wise,
+.wise::selection {
+  text-decoration-color: var(--wise);
 }
 
 .blog,
