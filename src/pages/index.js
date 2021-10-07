@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <Layout siteTitle="Jack Leslie">
       <p>
-        Graduate software engineer at{' '}
+        Software engineer at{' '}
         <a href="https://wise.com" className="wise">
           Wise
         </a>
