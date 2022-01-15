@@ -21,7 +21,7 @@ export default function Index() {
       </p>
       <p>
         If you want to get in touch you can{' '}
-        <a href="mailto:jackleslie@protonmail.com" className="protonmail">
+        <a href="mailto:jackjdleslie@gmail.com" className="gmail">
           email
         </a>{' '}
         me, and you can find me online through{' '}

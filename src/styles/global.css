@@ -10,7 +10,7 @@
   --background: var(--white);
   --wise: #00b9ff;
   --blog: #999;
-  --protonmail: #8a90c7;
+  --gmail: #EA4335;
   --keybase: #ff6f21;
   --transition:
     color 0.2s ease,
@@ -134,9 +134,9 @@ blockquote {
   text-decoration-color: var(--blog);
 }
 
-.protonmail,
-.protonmail::selection {
-  text-decoration-color: var(--protonmail);
+.gmail,
+.gmail::selection {
+  text-decoration-color: var(--gmail);
 }
 
 .keybase,
