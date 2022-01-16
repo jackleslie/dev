@@ -6,6 +6,7 @@ const defaultTitle = 'Jack Leslie';
 
 test('renders home page name as title by default', () => {
   render(<Header />);
+  screen.debug();
   expect(screen.getByText(defaultTitle)).toBeInTheDocument();
 });
 

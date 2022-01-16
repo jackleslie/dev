@@ -1,9 +1,13 @@
-module.exports = {
-  collectCoverageFrom: ['**/*.{js,jsx}', '!**/node_modules/**'],
+const nextJest = require('next/jest')
+
+const createJestConfig = nextJest({
+  dir: './',
+})
+
+const customJestConfig = {
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
-  transform: {
-    '\\.[jt]sx?$': 'babel-jest',
-    '^.+\\.module\\.css$': 'jest-transform-stub',
-  },
-};
+  testEnvironment: 'jest-environment-jsdom',
+}
+
+// createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
+module.exports = createJestConfig(customJestConfig)
