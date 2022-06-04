@@ -24,7 +24,7 @@ export default function Index() {
         <a href="mailto:jackjdleslie@gmail.com" className="gmail">
           email
         </a>{' '}
-        me, and you can find me online through{' '}
+        me, or you can find me online through{' '}
         <a href="https://keybase.io/jackleslie" className="keybase">
           Keybase
         </a>
