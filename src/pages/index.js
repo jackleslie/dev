@@ -6,11 +6,11 @@ export default function Index() {
   return (
     <Layout siteTitle="Jack Leslie">
       <p>
-        Software engineer at{' '}
+        Frontend developer at{' '}
         <a href="https://wise.com" className="wise">
           Wise
         </a>
-        , working on the Business Growth product team.
+        , working on the Business Onboarding product team.
       </p>
       <p>
         Sometimes I write about JavaScript and frontend development, you can read my posts on my{' '}
