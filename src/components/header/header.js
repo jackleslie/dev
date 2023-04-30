@@ -12,22 +12,22 @@ export default function Header({ title = '' }) {
       {title ? (
         <hgroup className={styles.path}>
           <Link href="/">
-            <a>
-              <h1 className={styles.pathRoot}>Jack Leslie</h1>
-            </a>
+
+            <h1 className={styles.pathRoot}>Jack Leslie</h1>
+
           </Link>
           <Link href={`/${title.toLowerCase()}`}>
-            <a>
-              <h1> / {title}</h1>
-            </a>
+
+            <h1> / {title}</h1>
+
           </Link>
         </hgroup>
       ) : (
-        <Link href="/">
-          <a>
-            <h1>Jack Leslie</h1>
-          </a>
-        </Link>
+        (<Link href="/">
+
+          <h1>Jack Leslie</h1>
+
+        </Link>)
       )}
 
       <button

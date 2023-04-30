@@ -7,7 +7,7 @@ import '../styles/syntax.css';
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider defaultTheme="system" disableTransitionOnChange>
+    <ThemeProvider defaultTheme="system">
       <Head>
         <meta charSet="utf-8" />
         <meta name="description" content="Jack Leslie personal website" />

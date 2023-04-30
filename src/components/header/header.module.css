@@ -28,7 +28,6 @@
   width: 30px;
   background-color: var(--white);
   border-radius: 50%;
-  transition: var(--transition);
 }
 
 .moon {
@@ -39,7 +38,6 @@
   border-radius: 50%;
   left: var(--moon-left);
   top: var(--moon-top);
-  transition: var(--transition);
 }
 
 .path {

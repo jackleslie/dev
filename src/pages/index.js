@@ -15,7 +15,7 @@ export default function Index() {
       <p>
         Sometimes I write about JavaScript and frontend development, you can read my posts on my{' '}
         <Link href="/blog">
-          <a>blog</a>
+          blog
         </Link>
         .
       </p>

@@ -10,15 +10,8 @@
   --background: var(--white);
   --wise: #9fe870;
   --blog: #999;
-  --gmail: #EA4335;
+  --gmail: #ea4335;
   --keybase: #ff6f21;
-  --transition:
-    color 0.2s ease,
-    background-color 0.2s ease,
-    text-decoration-color 0.2s ease,
-    opacity 0.2s ease,
-    top 0.2s ease,
-    left 0.2s ease;
   --moon-top: 0;
   --moon-left: 0;
 }
@@ -38,7 +31,6 @@
 
 body {
   background-color: var(--background);
-  transition: var(--transition);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -48,7 +40,6 @@ h1 {
   font-family: var(--font);
   color: var(--foreground);
   font-size: 3rem;
-  transition: var(--transition);
   letter-spacing: -0.04em;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -58,7 +49,6 @@ h2 {
   font-family: var(--font);
   color: var(--foreground);
   font-size: 2rem;
-  transition: var(--transition);
   letter-spacing: -0.04em;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -68,7 +58,6 @@ h3 {
   font-family: var(--font);
   color: var(--foreground);
   font-size: 1.2rem;
-  transition: var(--transition);
   letter-spacing: -0.04em;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -79,7 +68,6 @@ p {
   font-family: var(--font);
   color: var(--midground);
   font-size: 1.25rem;
-  transition: var(--transition);
 }
 
 a {
@@ -90,13 +78,11 @@ p a,
 p a:visited {
   color: var(--midground);
   font-weight: 500;
-  transition: var(--transition);
   text-decoration-line: underline;
   text-underline-position: under;
 }
 
 code {
-  transition: var(--transition);
   font-family: Menlo, monospace;
   background-color: var(--foreground);
   padding: 5px;
@@ -106,7 +92,6 @@ code {
 }
 
 pre {
-  transition: var(--transition);
   font-family: Menlo, monospace;
   background-color: var(--foreground);
   padding: 10px;
@@ -167,11 +152,5 @@ blockquote {
 
   code {
     font-size: 0.7rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    --transition: none;
   }
 }
