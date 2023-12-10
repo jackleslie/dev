@@ -10,7 +10,7 @@ export default function Index() {
         <a href="https://wise.com" className="wise">
           Wise
         </a>
-        , working on the Business Onboarding product team.
+        , working in the Send Money product team.
       </p>
       <p>
         Sometimes I write about JavaScript and frontend development, you can read my posts on my{' '}
