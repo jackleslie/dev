@@ -129,10 +129,10 @@ blockquote {
   text-decoration-color: var(--keybase);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   h1 {
-    font-size: 2.4rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 
   h2 {
@@ -153,4 +153,28 @@ blockquote {
   code {
     font-size: 0.7rem;
   }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.gap-y-1 {
+  row-gap: 8px;
+}
+
+.gap-y-2 {
+  row-gap: 16px;
 }
