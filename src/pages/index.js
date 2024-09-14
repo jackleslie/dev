@@ -11,8 +11,10 @@ export default function Index() {
           Wise
         </a>{" "}
         working in the Send Money product team. I also sometimes take photos;
-        you can look at them on my <Link href="/gallery">gallery</Link>. If you
-        want to get in touch you can{" "}
+        you can look at them on my <Link href="/gallery">gallery</Link>.
+      </p>
+      <p>
+        If you want to get in touch you can{" "}
         <a href="mailto:jackjdleslie@gmail.com" className="gmail">
           email
         </a>{" "}
