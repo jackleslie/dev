@@ -21,6 +21,7 @@ export default function Gallery() {
               width: "100%",
               height: "auto",
             }}
+            unoptimized
           />
         ))}
       </div>
