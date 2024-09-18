@@ -1,13 +1,13 @@
-const nextJest = require('next/jest')
+const nextJest = require("next/jest");
 
 const createJestConfig = nextJest({
-  dir: './',
-})
+  dir: "./",
+});
 
 const customJestConfig = {
-  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
-  testEnvironment: 'jest-environment-jsdom',
-}
+  setupFilesAfterEnv: ["<rootDir>/jest-setup.ts"],
+  testEnvironment: "jest-environment-jsdom",
+};
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
-module.exports = createJestConfig(customJestConfig)
+module.exports = createJestConfig(customJestConfig);

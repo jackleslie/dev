@@ -23,9 +23,11 @@
     "showdown-highlight": "^2.1.8"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^12.1.5",
+    "@types/jest": "^29.5.13",
     "@types/react": "^18.2.0",
+    "@types/webpack-env": "^1.18.5",
     "eslint": "^8.39.0",
     "eslint-config-next": "13.3.2",
     "jest": "^27.5.1",

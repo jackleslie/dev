@@ -1,9 +1,10 @@
-import React from 'react';
-import { Converter } from 'showdown';
-import showdownHighlight from 'showdown-highlight';
-import { Layout, Post } from '../../components';
+import React from "react";
+import { Converter } from "showdown";
+import showdownHighlight from "showdown-highlight";
+import { Layout } from "../../components/layout/layout";
+import Post from "../../components/post/post";
 
-export default function BlogPost({ title = '', date = '', body = '' }) {
+export default function BlogPost({ title = "", date = "", body = "" }) {
   return (
     <Layout siteTitle={title} pageTitle="Blog">
       <Post title={title} date={date}>
@@ -16,7 +17,10 @@ export default function BlogPost({ title = '', date = '', body = '' }) {
 export async function getStaticProps({ ...ctx }) {
   const { slug } = ctx.params;
   const content = await import(`../../../posts/${slug}.md`);
-  const converter = new Converter({ metadata: true, extensions: [showdownHighlight] });
+  const converter = new Converter({
+    metadata: true,
+    extensions: [showdownHighlight],
+  });
   const body = converter.makeHtml(content.default);
   const { title, date } = converter.getMetadata();
 
@@ -34,12 +38,12 @@ export async function getStaticPaths() {
     const keys = context.keys();
 
     const data = keys.map((key) => {
-      const slug = key.replace(/^.*[\\/]/, '').slice(0, -3);
+      const slug = key.replace(/^.*[\\/]/, "").slice(0, -3);
       return slug;
     });
 
     return data;
-  })(require.context('../../../posts', true, /\.md$/));
+  })(require.context("../../../posts", true, /\.md$/));
 
   const paths = blogSlugs.map((slug) => `/blog/${slug}`);
 

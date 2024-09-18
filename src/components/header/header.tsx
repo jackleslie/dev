@@ -1,10 +1,10 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
-import styles from './header.module.css';
-import { useToggle } from '../../hooks';
+import styles from "./header.module.css";
+import { useToggle } from "../../hooks/useToggle";
 
-export default function Header({ title = '' }) {
+export default function Header({ title = "" }) {
   const [toggle] = useToggle();
 
   return (
@@ -12,22 +12,16 @@ export default function Header({ title = '' }) {
       {title ? (
         <hgroup className={styles.path}>
           <Link href="/">
-
             <h1 className={styles.pathRoot}>Jack Leslie</h1>
-
           </Link>
           <Link href={`/${title.toLowerCase()}`}>
-
             <h1> / {title}</h1>
-
           </Link>
         </hgroup>
       ) : (
-        (<Link href="/">
-
+        <Link href="/">
           <h1>Jack Leslie</h1>
-
-        </Link>)
+        </Link>
       )}
 
       <button

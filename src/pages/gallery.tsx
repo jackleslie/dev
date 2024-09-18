@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import Layout from "../components/layout/layout";
+import { Layout } from "../components/layout/layout";
 
 const images = [{ src: "/forest.jpg" }, { src: "/storr.jpg" }];
 

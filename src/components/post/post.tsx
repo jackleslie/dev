@@ -1,23 +1,21 @@
-import React from 'react';
-import Link from 'next/link';
-import styles from './post.module.css';
+import React from "react";
+import Link from "next/link";
+import styles from "./post.module.css";
 
 export default function Post({
-  title = '',
-  date = '',
+  title = "",
+  date = "",
   isTldr = false,
-  slug = '/',
+  slug = "/",
   children = null,
 }) {
   return (
     <section className={styles.post}>
       <hgroup>
         {isTldr ? (
-          (<Link href="/blog/[slug]" as={`/blog/${slug}`}>
-
+          <Link href="/blog/[slug]" as={`/blog/${slug}`}>
             <h2>{title}</h2>
-
-          </Link>)
+          </Link>
         ) : (
           <h2>{title}</h2>
         )}
@@ -26,7 +24,7 @@ export default function Post({
       {isTldr ? (
         <p>
           <b>tl;dr: </b>
-          {children}{' '}
+          {children}{" "}
           <Link href="/blog/[slug]" as={`/blog/${slug}`}>
             Read more
           </Link>
