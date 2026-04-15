@@ -3,7 +3,7 @@
   "engines": {
     "node": "^20"
   },
-  "packageManager": "pnpm@9.7.0",
+  "packageManager": "pnpm@9.15.9",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
